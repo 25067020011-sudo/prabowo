@@ -1,0 +1,74 @@
+{
+  "total_evaluated_items": 200,
+  "inter_coder_reliability": {
+    "raw_percentage_agreement": "88.0%",
+    "cohens_kappa": 0.8103,
+    "krippendorff_alpha": 0.8083,
+    "benchmark_standard": "Krippendorff (2018) > 0.80 indicates robust scholarly reliability"
+  },
+  "corpus_quality_appraisal": {
+    "high_quality_n": 191,
+    "high_quality_pct": "95.5%",
+    "moderate_quality_n": 9,
+    "moderate_quality_pct": "4.5%",
+    "excluded_risk_of_bias_n": 0,
+    "excluded_risk_of_bias_pct": "0.0%",
+    "average_qa_score": 93.85
+  },
+  "brand24_emotion_model_evaluation": {
+    "Trust": {
+      "precision": 0.914,
+      "recall": 0.972,
+      "f1_score": 0.942,
+      "support": 119
+    },
+    "Skepticism": {
+      "precision": 0.821,
+      "recall": 0.889,
+      "f1_score": 0.854,
+      "support": 43
+    },
+    "Anger": {
+      "precision": 0.778,
+      "recall": 0.778,
+      "f1_score": 0.778,
+      "support": 22
+    },
+    "Surprise": {
+      "precision": 0.909,
+      "recall": 0.667,
+      "f1_score": 0.769,
+      "support": 16
+    },
+    "Anticipation": {
+      "precision": 1.0,
+      "recall": 0.643,
+      "f1_score": 0.783,
+      "support": 14
+    },
+    "Fear": {
+      "precision": 0.75,
+      "recall": 0.5,
+      "f1_score": 0.6,
+      "support": 7
+    },
+    "Sadness": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 2
+    },
+    "Disgust": {
+      "precision": 0.0,
+      "recall": 1.0,
+      "f1_score": 0.0,
+      "support": 1
+    },
+    "Joy / Relief": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 0
+    }
+  }
+}

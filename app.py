@@ -817,6 +817,7 @@ with tab_data:
     pdf_path = "MANUSCRIPT_SCOPUS_Q1_26_PAGES.pdf"
     docx_path = "MANUSCRIPT_SCOPUS_Q1_26_PAGES.docx"
     nodexl_path = "nodexl_penyadapan_prabowo.xlsx"
+    qa_path = "output/evaluation/dataset_quality_assessment.csv"
 
     dl_col1, dl_col2, dl_col3, dl_col4 = st.columns(4)
 
@@ -857,14 +858,50 @@ with tab_data:
             )
 
     with dl_col4:
-        csv_data = filtered_df.to_csv(index=False).encode("utf-8")
-        st.download_button(
-            label="📑 Unduh Korpus CSV",
-            data=csv_data,
-            file_name="data_penyadapan_prabowo_filtered.csv",
-            mime="text/csv",
-            width="stretch"
-        )
+        if os.path.exists(qa_path):
+            with open(qa_path, "rb") as f:
+                qa_bytes = f.read()
+            st.download_button(
+                label="📋 Unduh QA Dataset (CSV)",
+                data=qa_bytes,
+                file_name="dataset_quality_assessment.csv",
+                mime="text/csv",
+                width="stretch"
+            )
+        else:
+            csv_data = filtered_df.to_csv(index=False).encode("utf-8")
+            st.download_button(
+                label="📑 Unduh Korpus CSV",
+                data=csv_data,
+                file_name="data_penyadapan_prabowo_filtered.csv",
+                mime="text/csv",
+                width="stretch"
+            )
+
+    # Section Evaluasi Quality Assessment
+    st.markdown("---")
+    st.markdown("### 📋 Evaluasi Quality Assessment (DQA) & Inter-Coder Reliability")
+    st.markdown(
+        "Evaluasi kualitas korpus berdasarkan standar metodologis **PRISMA 2020 (Risk of Bias)**, "
+        "**Mixed Methods Appraisal Tool (MMAT)**, dan pengujian keandalan antar-koder (**Krippendorff's Alpha**):"
+    )
+
+    qa_summary_path = "output/evaluation/quality_assessment_metrics_summary.json"
+    if os.path.exists(qa_summary_path):
+        with open(qa_summary_path, "r") as f:
+            qa_metrics = json.load(f)
+
+        q_m1, q_m2, q_m3, q_m4 = st.columns(4)
+        q_m1.metric("Krippendorff's Alpha (α)", f"{qa_metrics['inter_coder_reliability']['krippendorff_alpha']:.3f}", "Robust (Threshold ≥ 0.80)")
+        q_m2.metric("Cohen's Kappa (κ)", f"{qa_metrics['inter_coder_reliability']['cohens_kappa']:.3f}", "High Scholarly Agreement")
+        q_m3.metric("Raw Inter-Coder Agreement", qa_metrics['inter_coder_reliability']['raw_percentage_agreement'], "Konsensus 2 Koder Independen")
+        q_m4.metric("Average QA Score", f"{qa_metrics['corpus_quality_appraisal']['average_qa_score']}/100", f"High Quality: {qa_metrics['corpus_quality_appraisal']['high_quality_pct']}")
+
+    if os.path.exists(qa_path):
+        df_qa_view = pd.read_csv(qa_path)
+        with st.expander("🔍 Lihat Tabel Lengkap Dataset Quality Assessment (200 Artikel)", expanded=False):
+            st.dataframe(df_qa_view, width="stretch", hide_index=True)
+            st.caption("Keterangan: Evaluasi mencakup kredibilitas sumber (Dewan Pers), status verifikasi fakta, integritas kutipan langsung, skor kelengkapan teks, serta perbandingan koding Koder A vs Koder B.")
 
     st.markdown("<br/>", unsafe_allow_html=True)
     st.markdown(
