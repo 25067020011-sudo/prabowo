@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, dataset, or research pipeline, please cite it using the metadata below."
+type: software
+title: "Network Topology of Political Scandals, Public Polarization, and Network Agenda-Setting in Hybrid Media Systems: The Case of the Indonesian Presidential Wiretapping Crisis"
+authors:
+  - name: "Computational Political Communication & Network Science Research Group"
+repository-code: "https://github.com/25067020011-sudo/prabowo"
+url: "https://prabowo-agendasetting.streamlit.app/"
+license: MIT
+date-released: "2026-11-09"
+keywords:
+  - network-agenda-setting
+  - social-network-analysis
+  - hybrid-media-system
+  - political-communication
+  - nodexl
+  - granger-causality
