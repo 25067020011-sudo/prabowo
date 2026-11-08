@@ -164,7 +164,7 @@ with tab_summary:
         )
         fig_tahap.update_traces(textposition='inside', textinfo='percent+label')
         fig_tahap.update_layout(margin=dict(t=20, b=20, l=20, r=20), height=380, showlegend=False)
-        st.plotly_chart(fig_tahap, use_container_width=True)
+        st.plotly_chart(fig_tahap, width="stretch")
 
     with col_chart2:
         st.markdown("**Top 10 Media / Portal Peliput Terbanyak**")
@@ -180,7 +180,7 @@ with tab_summary:
             text="Jumlah"
         )
         fig_media.update_layout(yaxis=dict(autorange="reversed"), margin=dict(t=20, b=20, l=20, r=20), height=380)
-        st.plotly_chart(fig_media, use_container_width=True)
+        st.plotly_chart(fig_media, width="stretch")
 
     # Profil singkat kasus
     st.markdown("""
@@ -242,7 +242,7 @@ with tab_timeline:
         height=450,
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
     )
-    st.plotly_chart(fig_jam, use_container_width=True)
+    st.plotly_chart(fig_jam, width="stretch")
 
     c_box1, c_box2 = st.columns(2)
     with c_box1:
@@ -295,7 +295,7 @@ with tab_rq1:
         text=df_actors.apply(lambda r: f"{r['Frekuensi']} ({r['Persentase']}%)", axis=1)
     )
     fig_actors.update_layout(height=420, margin=dict(t=20, b=20, l=20, r=20))
-    st.plotly_chart(fig_actors, use_container_width=True)
+    st.plotly_chart(fig_actors, width="stretch")
 
     st.markdown("### Analisis Peran Pialang Narasi (*Narrative Brokerage*)")
     b1, b2, b3 = st.columns(3)
@@ -341,7 +341,7 @@ with tab_rq2:
     st.markdown("#### 2. Tabel 20 Kandidat Berita Awal (Sheet Kandidat Awal)")
     st.dataframe(
         df_kandidat[["Jam bucket indeks (WIB)", "Media", "Judul menurut indeks", "Status"]],
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
@@ -422,7 +422,7 @@ with tab_rq3:
         barmode="stack",
         height=450
     )
-    st.plotly_chart(fig_lex, use_container_width=True)
+    st.plotly_chart(fig_lex, width="stretch")
 
 # -----------------------------------------------------------------------------
 # TAB 6: 8 DIMENSI ANALISIS NODEXL & SOCIAL NETWORK ANALYSIS
@@ -441,7 +441,7 @@ with tab_nodexl:
             file_name="nodexl_penyadapan_prabowo.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
             help="Buka file ini langsung di NodeXL Pro / NodeXL Cloud untuk visualisasi graf otomatis.",
-            use_container_width=True
+            width="stretch"
         )
     except Exception as e:
         st.caption(f"Workbook NodeXL dapat dibuat via export_to_nodexl.py")
@@ -459,7 +459,7 @@ with tab_nodexl:
         - **Layout:** *Fruchterman-Reingold / ForceAtlas2* memisahkan kutub hukum dan politik.
         """)
         try:
-            st.image("chart_sna_network_map.png", caption="Peta Jaringan Bipartit (NodeXL & Louvain Clusters)", use_container_width=True)
+            st.image("chart_sna_network_map.png", caption="Peta Jaringan Bipartit (NodeXL & Louvain Clusters)", width="stretch")
         except Exception:
             pass
 
@@ -470,7 +470,7 @@ with tab_nodexl:
         """)
         try:
             df_nodexl_grp = pd.read_excel("nodexl_penyadapan_prabowo.xlsx", sheet_name="Groups")
-            st.dataframe(df_nodexl_grp[["Group", "Label", "Vertex Count", "Edge Count"]], use_container_width=True, hide_index=True)
+            st.dataframe(df_nodexl_grp[["Group", "Label", "Vertex Count", "Edge Count"]], width="stretch", hide_index=True)
         except Exception:
             pass
 
@@ -479,7 +479,7 @@ with tab_nodexl:
         try:
             df_infl = pd.read_csv("sna_influencer_centrality.csv")
             top_infl = df_infl[df_infl["Tipe"] == "Narasumber"].head(6)
-            st.dataframe(top_infl[["Nama Simpul", "Degree", "Betweenness Centrality (Broker)", "Eigenvector Centrality", "PageRank"]], use_container_width=True, hide_index=True)
+            st.dataframe(top_infl[["Nama Simpul", "Degree", "Betweenness Centrality (Broker)", "Eigenvector Centrality", "PageRank"]], width="stretch", hide_index=True)
         except Exception:
             pass
 
@@ -507,7 +507,7 @@ with tab_nodexl:
             hole=0.45
         )
         fig_sent.update_layout(height=260, margin=dict(t=10, b=10, l=10, r=10))
-        st.plotly_chart(fig_sent, use_container_width=True)
+        st.plotly_chart(fig_sent, width="stretch")
 
         st.markdown("### 6. ⏱️ Analisis Temporal (Dinamika Waktu)")
         st.markdown("""
@@ -547,7 +547,7 @@ with tab_data:
 
     st.dataframe(
         filtered_df[valid_cols],
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
@@ -560,7 +560,7 @@ with tab_data:
             data=csv_data,
             file_name="data_penyadapan_prabowo_filtered.csv",
             mime="text/csv",
-            use_container_width=True
+            width="stretch"
         )
     with down_col2:
         st.markdown(
