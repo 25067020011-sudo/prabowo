@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d5" for="edge" attr.name="speaker_type" attr.type="string"/>
+<key id="d4" for="edge" attr.name="weight" attr.type="long"/>
+<key id="d3" for="node" attr.name="degree_weighted" attr.type="long"/>
+<key id="d2" for="node" attr.name="betweenness" attr.type="double"/>
+<key id="d1" for="node" attr.name="node_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="bipartite" attr.type="long"/>
+<graph edgedefault="undirected"><node id="Viva">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">3</data>
+</node>
+<node id="Berita Jatim">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.09545503901220782</data>
+  <data key="d3">3</data>
+</node>
+<node id="Republika">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.035567410340550096</data>
+  <data key="d3">2</data>
+</node>
+<node id="Katadata">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.012287118003996407</data>
+  <data key="d3">2</data>
+</node>
+<node id="Liputan6">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">4</data>
+</node>
+<node id="Mojok.co">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="JawaPos">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="JPNN">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.024684111344728407</data>
+  <data key="d3">13</data>
+</node>
+<node id="NTVNews">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.024123970403462248</data>
+  <data key="d3">2</data>
+</node>
+<node id="Liputan6 (Enam Plus)">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Wikipedia (id)">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Viva Bandung">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.024123970403462248</data>
+  <data key="d3">2</data>
+</node>
+<node id="TribunWow (2)">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Borneo Globe">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Kilasberita">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.034482758620689655</data>
+  <data key="d3">2</data>
+</node>
+<node id="Jakarta Globe">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="JPNN Jateng">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Kompas.id (English)">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Okezone">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">7</data>
+</node>
+<node id="Kompas (English)">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Media Indonesia">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="ANTARA">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.028726466113035982</data>
+  <data key="d3">6</data>
+</node>
+<node id="RCTI+ (IDX Channel)">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Kompas.com">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.024123970403462248</data>
+  <data key="d3">2</data>
+</node>
+<node id="RMOL Jateng">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Garuda TV">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Lensa Indonesia">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="RMOL">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0296354348078486</data>
+  <data key="d3">2</data>
+</node>
+<node id="IDN Times">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.024123970403462248</data>
+  <data key="d3">2</data>
+</node>
+<node id="Suara.com">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="detikNews">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">2</data>
+</node>
+<node id="iNews Bekasi">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Disway">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Harian Jogja">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.011343012704174232</data>
+  <data key="d3">8</data>
+</node>
+<node id="Editor Indonesia">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Tutur.co.id">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.18874773139745918</data>
+  <data key="d3">2</data>
+</node>
+<node id="Warta Jatim">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Bisnis.com">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.04088758589666033</data>
+  <data key="d3">4</data>
+</node>
+<node id="Justisio">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="NU Online">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.024123970403462248</data>
+  <data key="d3">2</data>
+</node>
+<node id="AFU.id">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.05860672902415192</data>
+  <data key="d3">3</data>
+</node>
+<node id="RCTI+ (Sindonews)">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="RCTI+ (iNews)">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Kompas.id">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.035567410340550096</data>
+  <data key="d3">2</data>
+</node>
+<node id="CNN Indonesia (video)">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Jawa Pos">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.008689435186712866</data>
+  <data key="d3">24</data>
+</node>
+<node id="Kakinews">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Journalarta">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Fortune Indonesia">
+  <data key="d0">0</data>
+  <data key="d1">Media</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Tersangka Jenderal (Purn) LSP">
+  <data key="d0">1</data>
+  <data key="d1">Narasumber</data>
+  <data key="d2">0.3210578491885209</data>
+  <data key="d3">40</data>
+</node>
+<node id="LIMS">
+  <data key="d0">1</data>
+  <data key="d1">Narasumber</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Pakar Hukum / Pengamat Intelijen">
+  <data key="d0">1</data>
+  <data key="d1">Narasumber</data>
+  <data key="d2">0.0030977089053314103</data>
+  <data key="d3">4</data>
+</node>
+<node id="Menko Yusril Ihza Mahendra">
+  <data key="d0">1</data>
+  <data key="d1">Narasumber</data>
+  <data key="d2">0.0741267202247239</data>
+  <data key="d3">12</data>
+</node>
+<node id="Presiden Prabowo Subianto">
+  <data key="d0">1</data>
+  <data key="d1">Narasumber</data>
+  <data key="d2">0.7588094402068998</data>
+  <data key="d3">48</data>
+</node>
+<node id="Mabes Polri / Divhumas">
+  <data key="d0">1</data>
+  <data key="d1">Narasumber</data>
+  <data key="d2">0.1663641863278887</data>
+  <data key="d3">6</data>
+</node>
+<node id="PDI Perjuangan">
+  <data key="d0">1</data>
+  <data key="d1">Narasumber</data>
+  <data key="d2">0.06788603612560058</data>
+  <data key="d3">6</data>
+</node>
+<node id="Kapolri Jenderal Suyudi Ario Seto">
+  <data key="d0">1</data>
+  <data key="d1">Narasumber</data>
+  <data key="d2">0.01796702658771625</data>
+  <data key="d3">3</data>
+</node>
+<node id="Sumber Internal / Grup WA (Anonim)">
+  <data key="d0">1</data>
+  <data key="d1">Narasumber</data>
+  <data key="d2">0.0</data>
+  <data key="d3">1</data>
+</node>
+<node id="Komisi III DPR RI">
+  <data key="d0">1</data>
+  <data key="d1">Narasumber</data>
+  <data key="d2">0.00020165355918531962</data>
+  <data key="d3">5</data>
+</node>
+<edge source="Viva" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">2</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Viva" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Berita Jatim" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Berita Jatim" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Berita Jatim" target="PDI Perjuangan">
+  <data key="d4">1</data>
+  <data key="d5">lainnya</data>
+</edge>
+<edge source="Republika" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Republika" target="Menko Yusril Ihza Mahendra">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Katadata" target="PDI Perjuangan">
+  <data key="d4">1</data>
+  <data key="d5">lainnya</data>
+</edge>
+<edge source="Katadata" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Liputan6" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">2</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Liputan6" target="Presiden Prabowo Subianto">
+  <data key="d4">2</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Mojok.co" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="JawaPos" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="JPNN" target="Presiden Prabowo Subianto">
+  <data key="d4">5</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="JPNN" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">3</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="JPNN" target="PDI Perjuangan">
+  <data key="d4">2</data>
+  <data key="d5">lainnya</data>
+</edge>
+<edge source="JPNN" target="Kapolri Jenderal Suyudi Ario Seto">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="JPNN" target="Menko Yusril Ihza Mahendra">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="JPNN" target="Pakar Hukum / Pengamat Intelijen">
+  <data key="d4">1</data>
+  <data key="d5">pakar</data>
+</edge>
+<edge source="NTVNews" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="NTVNews" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Liputan6 (Enam Plus)" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Wikipedia (id)" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Viva Bandung" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Viva Bandung" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="TribunWow (2)" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Borneo Globe" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Kilasberita" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Kilasberita" target="LIMS">
+  <data key="d4">1</data>
+  <data key="d5">lainnya</data>
+</edge>
+<edge source="Jakarta Globe" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="JPNN Jateng" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Kompas.id (English)" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Okezone" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">4</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Okezone" target="Presiden Prabowo Subianto">
+  <data key="d4">2</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Okezone" target="Menko Yusril Ihza Mahendra">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Kompas (English)" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Media Indonesia" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="ANTARA" target="Presiden Prabowo Subianto">
+  <data key="d4">2</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="ANTARA" target="Menko Yusril Ihza Mahendra">
+  <data key="d4">2</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="ANTARA" target="Komisi III DPR RI">
+  <data key="d4">2</data>
+  <data key="d5">politisi</data>
+</edge>
+<edge source="RCTI+ (IDX Channel)" target="Menko Yusril Ihza Mahendra">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Kompas.com" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Kompas.com" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="RMOL Jateng" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Garuda TV" target="Mabes Polri / Divhumas">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Lensa Indonesia" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="RMOL" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="RMOL" target="Kapolri Jenderal Suyudi Ario Seto">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="IDN Times" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="IDN Times" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Suara.com" target="Mabes Polri / Divhumas">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="detikNews" target="Presiden Prabowo Subianto">
+  <data key="d4">2</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="iNews Bekasi" target="Mabes Polri / Divhumas">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Disway" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Harian Jogja" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">4</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Harian Jogja" target="Presiden Prabowo Subianto">
+  <data key="d4">2</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Harian Jogja" target="Pakar Hukum / Pengamat Intelijen">
+  <data key="d4">1</data>
+  <data key="d5">pakar</data>
+</edge>
+<edge source="Harian Jogja" target="Menko Yusril Ihza Mahendra">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Editor Indonesia" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Tutur.co.id" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Tutur.co.id" target="Mabes Polri / Divhumas">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Warta Jatim" target="Mabes Polri / Divhumas">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Bisnis.com" target="Pakar Hukum / Pengamat Intelijen">
+  <data key="d4">2</data>
+  <data key="d5">pakar</data>
+</edge>
+<edge source="Bisnis.com" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Bisnis.com" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Justisio" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="NU Online" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="NU Online" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="AFU.id" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="AFU.id" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="AFU.id" target="Sumber Internal / Grup WA (Anonim)">
+  <data key="d4">1</data>
+  <data key="d5">anonim</data>
+</edge>
+<edge source="RCTI+ (Sindonews)" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="RCTI+ (iNews)" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Kompas.id" target="Menko Yusril Ihza Mahendra">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Kompas.id" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="CNN Indonesia (video)" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Jawa Pos" target="Tersangka Jenderal (Purn) LSP">
+  <data key="d4">8</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Jawa Pos" target="Presiden Prabowo Subianto">
+  <data key="d4">7</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Jawa Pos" target="Menko Yusril Ihza Mahendra">
+  <data key="d4">4</data>
+  <data key="d5">pejabat</data>
+</edge>
+<edge source="Jawa Pos" target="Komisi III DPR RI">
+  <data key="d4">3</data>
+  <data key="d5">politisi</data>
+</edge>
+<edge source="Jawa Pos" target="PDI Perjuangan">
+  <data key="d4">1</data>
+  <data key="d5">lainnya</data>
+</edge>
+<edge source="Jawa Pos" target="Kapolri Jenderal Suyudi Ario Seto">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Kakinews" target="Mabes Polri / Divhumas">
+  <data key="d4">1</data>
+  <data key="d5">aparat</data>
+</edge>
+<edge source="Journalarta" target="PDI Perjuangan">
+  <data key="d4">1</data>
+  <data key="d5">lainnya</data>
+</edge>
+<edge source="Fortune Indonesia" target="Presiden Prabowo Subianto">
+  <data key="d4">1</data>
+  <data key="d5">pejabat</data>
+</edge>
+</graph></graphml>

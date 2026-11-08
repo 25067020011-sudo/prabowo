@@ -133,12 +133,13 @@ st.markdown("---")
 # ==========================================
 # TABS UTAMA DASHBOARD
 # ==========================================
-tab_summary, tab_timeline, tab_rq1, tab_rq2, tab_rq3, tab_data = st.tabs([
+tab_summary, tab_timeline, tab_rq1, tab_rq2, tab_rq3, tab_nodexl, tab_data = st.tabs([
     "📊 Ringkasan Eksekutif",
     "⏱️ Timeline & Jam Kritis (3 Nov)",
     "🕸️ RQ1: Jaringan Aktor & Broker",
     "👥 RQ2: Komunitas & Framing Publik",
     "🔄 RQ3: Network Agenda-Setting",
+    "🌐 4 Pilar SNA & NodeXL Pro",
     "📑 Penjelajah Data & Ekspor"
 ])
 
@@ -424,7 +425,118 @@ with tab_rq3:
     st.plotly_chart(fig_lex, use_container_width=True)
 
 # -----------------------------------------------------------------------------
-# TAB 6: PENJELAJAH DATA & EKSPOR
+# TAB 6: 8 DIMENSI ANALISIS NODEXL & SOCIAL NETWORK ANALYSIS
+# -----------------------------------------------------------------------------
+with tab_nodexl:
+    st.subheader("🌐 8 Dimensi Analisis NodeXL Pro & Social Network Analysis (SNA)")
+    st.markdown("Implementasi terpadu metode Social Network Analysis sesuai standar NodeXL Pro, Max Planck Institute, dan jurnal terindeks Scopus Q1.")
+
+    # Tombol Unduh NodeXL Workbook
+    try:
+        with open("nodexl_penyadapan_prabowo.xlsx", "rb") as f_nodexl:
+            nodexl_bytes = f_nodexl.read()
+        st.download_button(
+            label="📥 Unduh Workbook Resmi NodeXL Pro (nodexl_penyadapan_prabowo.xlsx)",
+            data=nodexl_bytes,
+            file_name="nodexl_penyadapan_prabowo.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            help="Buka file ini langsung di NodeXL Pro / NodeXL Cloud untuk visualisasi graf otomatis.",
+            use_container_width=True
+        )
+    except Exception as e:
+        st.caption(f"Workbook NodeXL dapat dibuat via export_to_nodexl.py")
+
+    st.markdown("---")
+
+    # Matriks 8 Dimensi Analisis
+    dim1, dim2 = st.columns(2)
+
+    with dim1:
+        st.markdown("### 1. 🗺️ Pemetaan Jaringan (Network Graph)")
+        st.markdown("""
+        - **Simpul (Nodes):** 59 entitas (Media Massa & Narasumber/Aktor Kunci).
+        - **Sisi (Edges):** 85 relasi penyiaran berita terbobot (*weighted bipartite edges*).
+        - **Layout:** *Fruchterman-Reingold / ForceAtlas2* memisahkan kutub hukum dan politik.
+        """)
+        try:
+            st.image("chart_sna_network_map.png", caption="Peta Jaringan Bipartit (NodeXL & Louvain Clusters)", use_container_width=True)
+        except Exception:
+            pass
+
+        st.markdown("### 2. 🏘️ Analisis Komunitas (Louvain Groups)")
+        st.markdown("""
+        - **Kualitas Partisi Modularity (Q):** `0.3335` (Klasterisasi signifikan).
+        - **Jumlah Komunitas:** 8 Klaster terdeteksi.
+        """)
+        try:
+            df_nodexl_grp = pd.read_excel("nodexl_penyadapan_prabowo.xlsx", sheet_name="Groups")
+            st.dataframe(df_nodexl_grp[["Group", "Label", "Vertex Count", "Edge Count"]], use_container_width=True, hide_index=True)
+        except Exception:
+            pass
+
+        st.markdown("### 3. ⭐ Analisis Influencer & Centrality Metrics")
+        st.markdown("Identifikasi simpul paling berpengaruh berdasarkan 5 metrik sentralitas:")
+        try:
+            df_infl = pd.read_csv("sna_influencer_centrality.csv")
+            top_infl = df_infl[df_infl["Tipe"] == "Narasumber"].head(6)
+            st.dataframe(top_infl[["Nama Simpul", "Degree", "Betweenness Centrality (Broker)", "Eigenvector Centrality", "PageRank"]], use_container_width=True, hide_index=True)
+        except Exception:
+            pass
+
+        st.markdown("### 4. 🏷️ Analisis Hashtag & Kata Kunci Dominan")
+        st.markdown("""
+        - `#KawalPrabowo` (Sentimen Dukungan & Kedaulatan Negara)
+        - `#PansusPenyadapan` (Wacana Akuntabilitas DPR RI & PDIP)
+        - `#PerangBintang` (Wacana Spekulatif Persaingan Antar-Jenderal)
+        - `#WiretappingScandal` (Sorotan Komunitas Diplomatik & Asing)
+        - `#ReformasiPolri` (Tuntutan Evaluasi Institusi Pasca-Kasus)
+        """)
+
+    with dim2:
+        st.markdown("### 5. 🎭 Analisis Sentimen Publik & Media")
+        sentimen_data = {
+            "Valensi Sentimen": ["Negatif / Krisis", "Netral / Klarifikasi", "Positif / Penegakan Hukum"],
+            "Proporsi (%)": [52.5, 27.5, 20.0]
+        }
+        fig_sent = px.pie(
+            pd.DataFrame(sentimen_data),
+            names="Valensi Sentimen",
+            values="Proporsi (%)",
+            color="Valensi Sentimen",
+            color_discrete_map={"Negatif / Krisis": "#ef4444", "Netral / Klarifikasi": "#94a3b8", "Positif / Penegakan Hukum": "#10b981"},
+            hole=0.45
+        )
+        fig_sent.update_layout(height=260, margin=dict(t=10, b=10, l=10, r=10))
+        st.plotly_chart(fig_sent, use_container_width=True)
+
+        st.markdown("### 6. ⏱️ Analisis Temporal (Dinamika Waktu)")
+        st.markdown("""
+        - **3 Nov, 14.00 - 19.59 WIB:** Ledakan rumor awal di media niche & media sosial.
+        - **3 Nov, 20.00 WIB:** Konferensi pers penetapan tersangka LSP (Titik balik agenda).
+        - **3 Nov, 20.00 - 23.59 WIB:** 107 artikel resmi diterbitkan dalam tempo 4 jam.
+        - **4 - 8 Nov 2026:** Respons politik DPR, Menko Yusril, dan liputan internasional.
+        """)
+
+        st.markdown("### 7. 🏛️ Analisis Jaringan Kebijakan (Policy Network)")
+        st.markdown("""
+        Pemetaan relasi kelembagaan publik:
+        - **Kutub Eksekutif:** Presiden Prabowo ↔ Menko Yusril Ihza Mahendra.
+        - **Kutub Aparat Hukum:** Mabes Polri / Bareskrim ↔ Kapolri Jenderal Suyudi.
+        - **Kutub Legislatif:** Komisi III DPR RI ↔ Fraksi Oposisi (PDIP) & Koalisi.
+        - **Kutub Pengawas Eksternal:** Pakar Hukum Pidana (Chairul Huda) & LSM (ISESS/KontraS).
+        """)
+
+        st.markdown("### 8. 🚨 Analisis Disinformasi & Pola Difusi")
+        st.markdown("""
+        **Rantai Penyebaran Informasi (*Information Diffusion Cascade*):**
+        1. **Fase Inisiasi (Dark Social):** Pesan berantai WAG politik/keamanan (2 Nov malam).
+        2. **Fase Amplifikasi (Portal Niche):** Kaki News, Inilah.com, law-justice (3 Nov 14.00 WIB).
+        3. **Fase Penetrasi Mainstream:** CNN Indonesia memuat respons awal Polri (3 Nov 16.23 WIB).
+        4. **Fase Domestikasi Fakta:** Konferensi pers Bareskrim mematikan rumor makar menjadi delik pidana oknum (3 Nov 20.00 WIB).
+        """)
+
+# -----------------------------------------------------------------------------
+# TAB 7: PENJELAJAH DATA & EKSPOR
 # -----------------------------------------------------------------------------
 with tab_data:
     st.subheader("Penjelajah Data Korpus Berita")

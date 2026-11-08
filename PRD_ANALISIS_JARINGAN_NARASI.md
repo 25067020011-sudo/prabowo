@@ -127,3 +127,4 @@ Proyek ini tidak menilai benar atau salahnya perkara hukum. Seluruh klaim tentan
 | Risiko hukum atau etika | Ethical clearance, anonimisasi ID (hashing), konsultasi bagian hukum |
 | Kasus berkembang cepat (penentuan jendela waktu) | Tetapkan jendela utama di awal, laporkan analisis sensitivitas |
 | Kebaruan dinilai kurang | Rumuskan hipotesis teoritis dan tambahkan pembanding komparatif |
+

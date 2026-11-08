@@ -215,3 +215,4 @@ Peneliti selanjutnya disarankan untuk mengintegrasikan analisis pemodelan topik 
 - McCombs, M. E., & Shaw, D. L. (1972). The agenda-setting function of mass media. *Public Opinion Quarterly*, 36(2), 176-187.
 - Vargo, C. J., Guo, L., McCombs, M., & Shaw, D. L. (2014). Network agenda setting on Twitter: A big data approach to media effects. *Journal of Communication*, 64(2), 296-316.
 - Wasserman, S., & Faust, K. (1994). *Social Network Analysis: Methods and Applications*. Cambridge University Press.
+
