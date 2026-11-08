@@ -1,85 +1,127 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="weight" attr.type="long"/>
 <key id="d0" for="node" attr.name="entity" attr.type="string"/>
-<graph edgedefault="undirected"><node id="Presiden Prabowo">
-  <data key="d0">Presiden Prabowo</data>
+<graph edgedefault="undirected"><node id="Isu Makar">
+  <data key="d0">Isu Makar</data>
 </node>
-<node id="Mabes Polri">
-  <data key="d0">Mabes Polri</data>
+<node id="Mahkamah Konstitusi">
+  <data key="d0">Mahkamah Konstitusi</data>
 </node>
-<node id="Sumber Internal WAG">
-  <data key="d0">Sumber Internal WAG</data>
+<node id="Penyadapan Ilegal">
+  <data key="d0">Penyadapan Ilegal</data>
 </node>
-<node id="Kapolri Jenderal Suyudi">
-  <data key="d0">Kapolri Jenderal Suyudi</data>
+<node id="Prabowo Subianto">
+  <data key="d0">Prabowo Subianto</data>
 </node>
-<node id="Isu Penyadapan">
-  <data key="d0">Isu Penyadapan</data>
+<node id="Polri / Kapolri">
+  <data key="d0">Polri / Kapolri</data>
 </node>
-<node id="Menko Yusril">
-  <data key="d0">Menko Yusril</data>
+<node id="Pakar Hukum / Akademisi">
+  <data key="d0">Pakar Hukum / Akademisi</data>
 </node>
-<node id="Pakar Hukum / LSM">
-  <data key="d0">Pakar Hukum / LSM</data>
+<node id="Hasto Kristiyanto / PDIP">
+  <data key="d0">Hasto Kristiyanto / PDIP</data>
 </node>
-<node id="DPR RI / Pansus">
-  <data key="d0">DPR RI / Pansus</data>
+<node id="Bahlil Lahadalia">
+  <data key="d0">Bahlil Lahadalia</data>
 </node>
-<node id="Eks Kapolri LSP">
-  <data key="d0">Eks Kapolri LSP</data>
+<node id="Habiburokhman / Gerindra">
+  <data key="d0">Habiburokhman / Gerindra</data>
 </node>
-<node id="PDI Perjuangan">
-  <data key="d0">PDI Perjuangan</data>
+<node id="Isu Keamanan Nasional">
+  <data key="d0">Isu Keamanan Nasional</data>
 </node>
-<node id="Mabes TNI">
-  <data key="d0">Mabes TNI</data>
+<node id="Joko Widodo">
+  <data key="d0">Joko Widodo</data>
 </node>
-<edge source="Presiden Prabowo" target="Mabes Polri">
-  <data key="d1">12</data>
-</edge>
-<edge source="Presiden Prabowo" target="Menko Yusril">
-  <data key="d1">11</data>
-</edge>
-<edge source="Presiden Prabowo" target="Pakar Hukum / LSM">
-  <data key="d1">2</data>
-</edge>
-<edge source="Presiden Prabowo" target="Kapolri Jenderal Suyudi">
-  <data key="d1">15</data>
-</edge>
-<edge source="Presiden Prabowo" target="Eks Kapolri LSP">
-  <data key="d1">47</data>
-</edge>
-<edge source="Presiden Prabowo" target="PDI Perjuangan">
-  <data key="d1">4</data>
-</edge>
-<edge source="Presiden Prabowo" target="DPR RI / Pansus">
-  <data key="d1">5</data>
-</edge>
-<edge source="Presiden Prabowo" target="Sumber Internal WAG">
+<node id="Andi Gani / KSPSI">
+  <data key="d0">Andi Gani / KSPSI</data>
+</node>
+<edge source="Isu Makar" target="Mahkamah Konstitusi">
   <data key="d1">1</data>
 </edge>
-<edge source="Mabes Polri" target="Kapolri Jenderal Suyudi">
-  <data key="d1">2</data>
-</edge>
-<edge source="Mabes Polri" target="Eks Kapolri LSP">
-  <data key="d1">3</data>
-</edge>
-<edge source="Kapolri Jenderal Suyudi" target="Eks Kapolri LSP">
-  <data key="d1">10</data>
-</edge>
-<edge source="Kapolri Jenderal Suyudi" target="DPR RI / Pansus">
+<edge source="Isu Makar" target="Penyadapan Ilegal">
   <data key="d1">6</data>
 </edge>
-<edge source="Kapolri Jenderal Suyudi" target="Menko Yusril">
+<edge source="Isu Makar" target="Prabowo Subianto">
+  <data key="d1">6</data>
+</edge>
+<edge source="Isu Makar" target="Hasto Kristiyanto / PDIP">
   <data key="d1">1</data>
 </edge>
-<edge source="Menko Yusril" target="Eks Kapolri LSP">
+<edge source="Isu Makar" target="Joko Widodo">
+  <data key="d1">1</data>
+</edge>
+<edge source="Isu Makar" target="Polri / Kapolri">
+  <data key="d1">3</data>
+</edge>
+<edge source="Isu Makar" target="Andi Gani / KSPSI">
+  <data key="d1">1</data>
+</edge>
+<edge source="Mahkamah Konstitusi" target="Penyadapan Ilegal">
   <data key="d1">2</data>
 </edge>
-<edge source="DPR RI / Pansus" target="Eks Kapolri LSP">
-  <data key="d1">4</data>
+<edge source="Mahkamah Konstitusi" target="Prabowo Subianto">
+  <data key="d1">1</data>
 </edge>
-<edge source="Eks Kapolri LSP" target="PDI Perjuangan">
+<edge source="Mahkamah Konstitusi" target="Hasto Kristiyanto / PDIP">
+  <data key="d1">1</data>
+</edge>
+<edge source="Penyadapan Ilegal" target="Prabowo Subianto">
+  <data key="d1">46</data>
+</edge>
+<edge source="Penyadapan Ilegal" target="Pakar Hukum / Akademisi">
+  <data key="d1">31</data>
+</edge>
+<edge source="Penyadapan Ilegal" target="Hasto Kristiyanto / PDIP">
+  <data key="d1">2</data>
+</edge>
+<edge source="Penyadapan Ilegal" target="Polri / Kapolri">
+  <data key="d1">24</data>
+</edge>
+<edge source="Penyadapan Ilegal" target="Bahlil Lahadalia">
+  <data key="d1">26</data>
+</edge>
+<edge source="Penyadapan Ilegal" target="Habiburokhman / Gerindra">
+  <data key="d1">2</data>
+</edge>
+<edge source="Penyadapan Ilegal" target="Joko Widodo">
+  <data key="d1">6</data>
+</edge>
+<edge source="Prabowo Subianto" target="Pakar Hukum / Akademisi">
+  <data key="d1">22</data>
+</edge>
+<edge source="Prabowo Subianto" target="Bahlil Lahadalia">
+  <data key="d1">17</data>
+</edge>
+<edge source="Prabowo Subianto" target="Hasto Kristiyanto / PDIP">
+  <data key="d1">1</data>
+</edge>
+<edge source="Prabowo Subianto" target="Polri / Kapolri">
+  <data key="d1">17</data>
+</edge>
+<edge source="Prabowo Subianto" target="Habiburokhman / Gerindra">
+  <data key="d1">1</data>
+</edge>
+<edge source="Prabowo Subianto" target="Joko Widodo">
+  <data key="d1">5</data>
+</edge>
+<edge source="Polri / Kapolri" target="Habiburokhman / Gerindra">
   <data key="d1">3</data>
+</edge>
+<edge source="Polri / Kapolri" target="Bahlil Lahadalia">
+  <data key="d1">8</data>
+</edge>
+<edge source="Polri / Kapolri" target="Pakar Hukum / Akademisi">
+  <data key="d1">8</data>
+</edge>
+<edge source="Polri / Kapolri" target="Joko Widodo">
+  <data key="d1">2</data>
+</edge>
+<edge source="Polri / Kapolri" target="Andi Gani / KSPSI">
+  <data key="d1">2</data>
+</edge>
+<edge source="Pakar Hukum / Akademisi" target="Bahlil Lahadalia">
+  <data key="d1">33</data>
 </edge>
 </graph></graphml>
