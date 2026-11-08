@@ -118,3 +118,4 @@ Berdasarkan model **Network Agenda-Setting (NAS)** (Guo & McCombs), hubungan ant
 1. **Jaringan Aktor Bersifat Bipolar:** Liputan media menuntut adanya jembatan narasi (*broker*), di mana figur Yusril Ihza Mahendra bertindak sebagai *political reconciler*, sementara Mabes Polri bertindak sebagai *institutional buffer*.
 2. **Polarisasi Publik Berbasis Atribusi Tanggung Jawab:** Publik terpecah antara mereka yang mengatribusikan kesalahan pada level individu oknum (G1) versus mereka yang melihatnya sebagai kegagalan sistemik institusi negara (G2).
 3. **Validasi Model Hybrid Agenda-Setting:** Kasus ini menunjukkan bahwa di era konvergensi media sosial dan pers arus utama, publik memegang kekuasaan memicu isu (*trigger power*), namun pers arus utama yang berkolaborasi dengan elite institusional tetap memegang hegemoni dalam pembingkaian akhir (*framing power*).
+

@@ -1,0 +1,467 @@
+import datetime
+import re
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+import streamlit as st
+
+# Konfigurasi halaman Streamlit
+st.set_page_config(
+    page_title="Dashboard Analisis Narasi: Kasus Penyadapan Presiden",
+    page_icon="📡",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Custom CSS untuk tampilan modern & bersih
+st.markdown("""
+<style>
+    .main-header {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #1e3a8a;
+        margin-bottom: 0.2rem;
+    }
+    .sub-header {
+        font-size: 1.05rem;
+        color: #4b5563;
+        margin-bottom: 1.5rem;
+    }
+    .metric-card {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        padding: 16px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .badge {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-right: 6px;
+    }
+    .badge-primary { background-color: #dbeafe; color: #1e40af; }
+    .badge-warning { background-color: #fef3c7; color: #92400e; }
+    .badge-success { background-color: #dcfce7; color: #166534; }
+</style>
+""", unsafe_allow_html=True)
+
+
+@st.cache_data
+def load_all_data():
+    excel_path = "data.xlsx"
+    df_link = pd.read_excel(excel_path, sheet_name="Data Link")
+    df_dist = pd.read_excel(excel_path, sheet_name="Distribusi Jam")
+    df_kandidat = pd.read_excel(excel_path, sheet_name="Kandidat Awal")
+    df_unverified = pd.read_excel(excel_path, sheet_name="Belum Terverifikasi")
+    df_meta = pd.read_excel(excel_path, sheet_name="Metodologi")
+
+    # Format tanggal
+    if "Tanggal publikasi" in df_link.columns:
+        df_link["Tanggal_Clean"] = pd.to_datetime(df_link["Tanggal publikasi"]).dt.date
+
+    return df_link, df_dist, df_kandidat, df_unverified, df_meta
+
+
+df_link, df_dist, df_kandidat, df_unverified, df_meta = load_all_data()
+
+# ==========================================
+# SIDEBAR: FILTER & KONTROL
+# ==========================================
+with st.sidebar:
+    st.image("https://img.icons8.com/color/96/satellite-sending-signal.png", width=64)
+    st.title("Filter & Parameter")
+    st.markdown("Kajian SNA & Network Agenda-Setting Kasus Penyadapan Presiden.")
+
+    # Search Box
+    search_keyword = st.text_input("🔍 Cari kata kunci / judul:", placeholder="cth: makar, lsp, kapolri, yusril...")
+
+    # Filter Tahap Narasi
+    tahap_options = sorted(df_link["Tahap narasi"].dropna().unique().tolist())
+    selected_tahap = st.multiselect("Pilih Tahap Narasi:", options=tahap_options, default=tahap_options)
+
+    # Filter Jenis Sumber
+    sumber_options = sorted(df_link["Jenis sumber"].dropna().unique().tolist())
+    selected_sumber = st.multiselect("Pilih Jenis Sumber:", options=sumber_options, default=sumber_options)
+
+    # Filter Media / Portal
+    media_options = sorted(df_link["Media / Akun"].dropna().unique().tolist())
+    selected_media = st.multiselect("Pilih Media Tertentu (Opsional):", options=media_options, default=[])
+
+    st.markdown("---")
+    st.caption("📌 **Target Penelitian:** Publikasi Jurnal Scopus Q1 / SINTA 1.")
+    st.caption("🔬 **Kerangka Teori:** Network Agenda-Setting (Guo & McCombs) & Framing (Entman).")
+
+
+# Filter DataFrame utama
+filtered_df = df_link.copy()
+if selected_tahap:
+    filtered_df = filtered_df[filtered_df["Tahap narasi"].isin(selected_tahap)]
+if selected_sumber:
+    filtered_df = filtered_df[filtered_df["Jenis sumber"].isin(selected_sumber)]
+if selected_media:
+    filtered_df = filtered_df[filtered_df["Media / Akun"].isin(selected_media)]
+if search_keyword:
+    pat = re.escape(search_keyword)
+    filtered_df = filtered_df[
+        filtered_df["Judul / deskripsi"].str.contains(pat, case=False, na=False) |
+        filtered_df["Media / Akun"].str.contains(pat, case=False, na=False)
+    ]
+
+# ==========================================
+# HEADER UTAMA
+# ==========================================
+st.markdown('<div class="main-header">📡 Media Intelligence & Network Agenda-Setting Dashboard</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-header">Analisis Jaringan Aktor, Respons Publik, dan Dinamika Pembingkaian Kasus Penyadapan Presiden Prabowo Subianto</div>', unsafe_allow_html=True)
+
+# Metric KPI Baris 1
+m1, m2, m3, m4 = st.columns(4)
+total_news = len(filtered_df)
+unique_media = filtered_df["Media / Akun"].nunique()
+prabowo_mentions = filtered_df["Judul / deskripsi"].str.contains(r"prabowo|presiden", case=False, regex=True).sum()
+lsp_mentions = filtered_df["Judul / deskripsi"].str.contains(r"lsp|listyo|sigit|tersangka", case=False, regex=True).sum()
+
+m1.metric("Total Berita Terfilter", f"{total_news} / 200", delta="Korpus Terverifikasi")
+m2.metric("Portal Media Aktif", f"{unique_media} Media", delta="Nasional & Global")
+m3.metric("Sentralitas Presiden", f"{prabowo_mentions} ({prabowo_mentions/max(total_news,1)*100:.1f}%)", delta="Fokus Utama")
+m4.metric("Keterkaitan Tersangka LSP", f"{lsp_mentions} ({lsp_mentions/max(total_news,1)*100:.1f}%)", delta="Kutub Legal")
+
+st.markdown("---")
+
+# ==========================================
+# TABS UTAMA DASHBOARD
+# ==========================================
+tab_summary, tab_timeline, tab_rq1, tab_rq2, tab_rq3, tab_data = st.tabs([
+    "📊 Ringkasan Eksekutif",
+    "⏱️ Timeline & Jam Kritis (3 Nov)",
+    "🕸️ RQ1: Jaringan Aktor & Broker",
+    "👥 RQ2: Komunitas & Framing Publik",
+    "🔄 RQ3: Network Agenda-Setting",
+    "📑 Penjelajah Data & Ekspor"
+])
+
+# -----------------------------------------------------------------------------
+# TAB 1: RINGKASAN EKSEKUTIF
+# -----------------------------------------------------------------------------
+with tab_summary:
+    st.subheader("Ringkasan Distribusi & Karakteristik Korpus Media")
+
+    col_chart1, col_chart2 = st.columns([1, 1])
+
+    with col_chart1:
+        st.markdown("**Proporsi 7 Tahap Narasi Pemberitaan**")
+        tahap_dist = filtered_df["Tahap narasi"].value_counts().reset_index()
+        tahap_dist.columns = ["Tahap Narasi", "Jumlah Berita"]
+        fig_tahap = px.pie(
+            tahap_dist,
+            names="Tahap Narasi",
+            values="Jumlah Berita",
+            hole=0.45,
+            color_discrete_sequence=px.colors.qualitative.Prism
+        )
+        fig_tahap.update_traces(textposition='inside', textinfo='percent+label')
+        fig_tahap.update_layout(margin=dict(t=20, b=20, l=20, r=20), height=380, showlegend=False)
+        st.plotly_chart(fig_tahap, use_container_width=True)
+
+    with col_chart2:
+        st.markdown("**Top 10 Media / Portal Peliput Terbanyak**")
+        top_media = filtered_df["Media / Akun"].value_counts().head(10).reset_index()
+        top_media.columns = ["Media / Akun", "Jumlah"]
+        fig_media = px.bar(
+            top_media,
+            x="Jumlah",
+            y="Media / Akun",
+            orientation="h",
+            color="Jumlah",
+            color_continuous_scale="Blues",
+            text="Jumlah"
+        )
+        fig_media.update_layout(yaxis=dict(autorange="reversed"), margin=dict(t=20, b=20, l=20, r=20), height=380)
+        st.plotly_chart(fig_media, use_container_width=True)
+
+    # Profil singkat kasus
+    st.markdown("""
+    > **Temuan Kunci Ringkasan:**
+    > 1. Pemberitaan paling masif terpusat pada **Tahap 4 (Respons pemerintah/elite)** dengan 74 artikel (37.0%), diikuti oleh **Tahap 6 (Analisis/liputan lanjutan)** dengan 46 artikel (23.0%).
+    > 2. JPNN, Jawa Pos, ANTARA, dan Okezone menjadi produsen berita utama yang menggerakkan volume informasi nasional.
+    > 3. Sebanyak 19 artikel berasal dari media internasional / berbahasa Inggris (Kompas English, Jakarta Globe, TRT World, Tempo English) yang membingkai isu dalam koridor *national security vulnerability*.
+    """)
+
+# -----------------------------------------------------------------------------
+# TAB 2: TIMELINE & TITIK BALIK HARI KRITIS
+# -----------------------------------------------------------------------------
+with tab_timeline:
+    st.subheader("Rekonstruksi Temporal Hari Kritis (Selasa, 3 November 2026)")
+    st.markdown("Perbandingan volume publikasi sebelum vs sesudah Konferensi Pers Resmi Mabes Polri (20.00 WIB).")
+
+    # Bersihkan sheet Distribusi Jam: ambil hanya baris jam numerik (14.00 s.d. 23.00)
+    num_jam = pd.to_numeric(df_dist["Jam (WIB), 3 Nov 2026"], errors="coerce")
+    v_dist = df_dist[num_jam.notna()].copy()
+    v_dist["Jam_Float"] = num_jam[num_jam.notna()]
+    v_dist["Jam_Label"] = v_dist["Jam_Float"].apply(lambda x: f"{int(x):02d}.00 WIB")
+
+    fig_jam = go.Figure()
+    v_pra = v_dist[v_dist["Jam_Float"] < 20.0]
+    v_post = v_dist[v_dist["Jam_Float"] >= 20.0]
+
+    fig_jam.add_trace(go.Bar(
+        x=v_pra["Jam_Label"],
+        y=v_pra["Jumlah berita"],
+        name="Fase Rumor & Pra-Konferensi (14.00 - 19.59)",
+        marker_color="#ef4444",
+        text=v_pra["Tahap narasi dominan"],
+        hoverinfo="x+y+text"
+    ))
+
+    fig_jam.add_trace(go.Bar(
+        x=v_post["Jam_Label"],
+        y=v_post["Jumlah berita"],
+        name="Fase Konfirmasi & Resonansi Resmi (20.00 - 23.59)",
+        marker_color="#2563eb",
+        text=v_post["Tahap narasi dominan"],
+        hoverinfo="x+y+text"
+    ))
+
+    fig_jam.add_vline(
+        x=5.5,
+        line_width=2.5,
+        line_dash="dash",
+        line_color="#b91c1c",
+        annotation_text="Konferensi Pers Bareskrim (20.00 WIB)",
+        annotation_position="top left"
+    )
+
+    fig_jam.update_layout(
+        title="Volume Publikasi Berita Per Jam pada 3 Nov 2026 (N = 146 Berita)",
+        xaxis_title="Jam Penayangan (WIB)",
+        yaxis_title="Jumlah Artikel",
+        barmode="group",
+        height=450,
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+    )
+    st.plotly_chart(fig_jam, use_container_width=True)
+
+    c_box1, c_box2 = st.columns(2)
+    with c_box1:
+        st.info("""
+        **Fase Pra-Konferensi Pers (14.00 - 19.59 WIB):**
+        - Total berita: **39 artikel (26.7%)**.
+        - Didominasi portal berita niche & media daerah (AFU.id, law-justice, RMOL Jateng, Optika.id).
+        - Pembingkaian mengarah pada spekulasi penangkapan petinggi kepolisian dan operasi senyap.
+        """)
+    with c_box2:
+        st.success("""
+        **Fase Pasca-Konferensi Pers (20.00 - 23.59 WIB):**
+        - Total berita: **107 artikel (73.3%)**.
+        - Lonjakan drastis dalam kurun waktu 4 jam setelah penetapan status tersangka eks Kapolri LSP.
+        - Terjadi *reframing* masif menjadi wacana hukum pidana "murni oknum, bukan kebijakan institusi".
+        """)
+
+# -----------------------------------------------------------------------------
+# TAB 3: RQ1: JARINGAN AKTOR & BROKER NARASI
+# -----------------------------------------------------------------------------
+with tab_rq1:
+    st.subheader("RQ1: Struktur Jaringan Aktor dan Narasumber dalam Liputan Media")
+
+    actors_patterns = {
+        "Presiden Prabowo Subianto": r"prabowo|presiden",
+        "Eks Kapolri LSP / Tersangka": r"lsp|listyo|sigit|tersangka",
+        "Mabes Polri / Bareskrim": r"bareskrim|mabes polri|propam|divpropam",
+        "DPR RI / Parpol (Pansus)": r"dpr|pansus|pdip|gerindra|parpol",
+        "Kapolri Jenderal Suyudi": r"suyudi|kapolri",
+        "Menko Yusril Ihza Mahendra": r"yusril",
+        "Isu Makar / Kudeta": r"makar|kudeta|operasi senyap",
+        "Pakar Hukum & LSM Sipil": r"pakar|pengamat|kontras|icw|isess|huda"
+    }
+
+    actor_counts = {}
+    for act, pat in actors_patterns.items():
+        actor_counts[act] = filtered_df["Judul / deskripsi"].str.contains(pat, case=False, regex=True).sum()
+
+    df_actors = pd.DataFrame(list(actor_counts.items()), columns=["Entitas / Aktor", "Frekuensi"])
+    df_actors["Persentase"] = (df_actors["Frekuensi"] / len(filtered_df) * 100).round(1)
+    df_actors = df_actors.sort_values(by="Frekuensi", ascending=True)
+
+    fig_actors = px.bar(
+        df_actors,
+        x="Frekuensi",
+        y="Entitas / Aktor",
+        orientation="h",
+        color="Frekuensi",
+        color_continuous_scale="Teal",
+        text=df_actors.apply(lambda r: f"{r['Frekuensi']} ({r['Persentase']}%)", axis=1)
+    )
+    fig_actors.update_layout(height=420, margin=dict(t=20, b=20, l=20, r=20))
+    st.plotly_chart(fig_actors, use_container_width=True)
+
+    st.markdown("### Analisis Peran Pialang Narasi (*Narrative Brokerage*)")
+    b1, b2, b3 = st.columns(3)
+    with b1:
+        st.markdown("""
+        #### 🏛️ Yusril Ihza Mahendra
+        **Peran:** *Political Reconciler Broker*
+        - Menjembatani Istana dan Kepolisian.
+        - Memastikan narasi *"Presiden tahu disadap dari laporan resmi Kapolri Jenderal Suyudi"* masuk ke media.
+        - Mencegah persepsi keretakan antara Presiden dan pimpinan Polri.
+        """)
+    with b2:
+        st.markdown("""
+        #### 🛡️ Mabes Polri (Bareskrim)
+        **Peran:** *Defensive Institutional Buffer*
+        - Membatasi krisis dengan frame *"tindakan murni oknum personal"*.
+        - Mensterilkan institusi kepolisian dari tuduhan makar institusional.
+        - Menjadi penyuplai kutipan terbesar pasca jam 20.00 WIB.
+        """)
+    with b3:
+        st.markdown("""
+        #### ⚖️ DPR RI (Komisi III & PDIP)
+        **Peran:** *Accountability & Policy Broker*
+        - Menghubungkan keresahan publik ke arena legislatif.
+        - Mengusulkan pembentukan **Pansus Angket Penyadapan**.
+        - Menuntut audit komprehensif perangkat intersepsi intelijen.
+        """)
+
+# -----------------------------------------------------------------------------
+# TAB 4: RQ2: KOMUNITAS & FRAMING PUBLIK
+# -----------------------------------------------------------------------------
+with tab_rq2:
+    st.subheader("RQ2: Komunitas Publik, Pembingkaian Dominan, dan Pemantik Pertama")
+
+    st.markdown("#### 1. Kronologi Pemantik Pertama ke Ruang Publik")
+    st.markdown("""
+    - **Fase 0 (2 Nov malam):** Beredar pesan berantai di grup WhatsApp politik/keamanan dan cuitan akun X anonim.
+    - **Fase 1 (3 Nov 14.00 WIB):** Diberitakan oleh portal niche (*Kaki News, Inilah.com, law-justice, Wartakotalive, Kabar24, Aktual.com*).
+    - **Fase 2 (3 Nov 15.00 WIB):** *AFU.id* menerbitkan rincian operasi senyap Divpropam di Mako Brimob.
+    - **Fase 3 (3 Nov 16.23 WIB):** *CNN Indonesia* mempublikasikan tanggapan awal Mabes Polri yang menyatakan *"sedang mengecek informasi"*.
+    """)
+
+    st.markdown("#### 2. Tabel 20 Kandidat Berita Awal (Sheet Kandidat Awal)")
+    st.dataframe(
+        df_kandidat[["Jam bucket indeks (WIB)", "Media", "Judul menurut indeks", "Status"]],
+        use_container_width=True,
+        hide_index=True
+    )
+
+    st.markdown("#### 3. Klaster Komunitas Publik (Berdasarkan Pemodelan NodeXL)")
+    k1, k2 = st.columns(2)
+    with k1:
+        st.info("""
+        **Komunitas G1: Loyalis Pro-Pemerintah**
+        - **Frame:** *Victimization & Law Enforcement*
+        - **Stance:** Pro-Prabowo, mengutuk pelaku, mendukung pembersihan Polri.
+        - **Kata Kunci:** `#KawalPrabowo`, `TindakTegas`, `OknumPengkhianat`, `KapolriHebat`.
+        """)
+        st.warning("""
+        **Komunitas G3: Warganet Spekulatif & WAG**
+        - **Frame:** *Factional Coup / "Perang Bintang"*
+        - **Stance:** Sensasionalis, mempercayai adanya perang faksi antar-jenderal.
+        - **Kata Kunci:** `PerangBintang`, `Makar`, `Kudeta`, `FaksiJenderal`.
+        """)
+    with k2:
+        st.error("""
+        **Komunitas G2: Oposisi & Aktivis Sipil (X)**
+        - **Frame:** *Systemic Abuse of Power & Failed Reform*
+        - **Stance:** Menolak narasi "hanya oknum", menuntut akuntabilitas negara & Pansus DPR.
+        - **Kata Kunci:** `#PansusPenyadapan`, `BukanSekadarOknum`, `ReformasiPolri`.
+        """)
+        st.success("""
+        **Komunitas G4: Pakar Hukum & Media Asing**
+        - **Frame:** *Cyber Security Breach & National Threat*
+        - **Stance:** Objektif, menyoroti kelemahan sandi negara dan dampak diplomasi.
+        - **Kata Kunci:** `StateSurveillance`, `Wiretapping`, `NationalSecurity`.
+        """)
+
+# -----------------------------------------------------------------------------
+# TAB 5: RQ3: NETWORK AGENDA-SETTING
+# -----------------------------------------------------------------------------
+with tab_rq3:
+    st.subheader("RQ3: Pengujian Model Network Agenda-Setting (Media vs. Publik)")
+
+    st.markdown("""
+    Dalam kerangka **Network Agenda-Setting (NAS)** (Guo & McCombs, 2011), transfer atribut antara media dan publik pada kasus ini terbukti mengikuti pola **Two-Phase Reversal Flow**:
+    """)
+
+    fase_c1, fase_c2 = st.columns(2)
+    with fase_c1:
+        st.markdown("""
+        ### 🔄 Fase 1: Bottom-Up Agenda Flow
+        *(2 Nov malam – 3 Nov 16.00 WIB)*
+        - **Agenda publik mendahului media.**
+        - Rumor meledak di X dan WAG dengan atribut *"kudeta, penangkapan jenderal, makar"*.
+        - Media arus utama menahan diri menunggu verifikasi resmi.
+        - Tekanan publik yang masif memaksa Mabes Polri merespons pada pukul 16.23 WIB.
+        """)
+    with fase_c2:
+        st.markdown("""
+        ### 🎯 Fase 2: Top-Down Domestication
+        *(3 Nov 20.00 WIB – 8 Nov 2026)*
+        - **Agenda media merebut kendali publik.**
+        - Konferensi pers Bareskrim membanjiri ruang wacana dengan **107 artikel berita dalam 4 jam**.
+        - Media arus utama sukses melakukan *reframing*: mengganti kata *"makar/kudeta"* menjadi *"tersangka penyadapan ilegal oleh oknum personal"*.
+        - Publik terdisiplinkan mengikuti koridor wacana hukum formal.
+        """)
+
+    # Tabel Leksikon
+    st.markdown("#### Proporsi Atribut Framing Kata Kunci Per Tahap Narasi (%)")
+    lexicon_data = {
+        "Tahap Narasi": ["1 Rumor", "2 Respons Polri Pra-Konpers", "3 Konfirmasi Resmi", "4 Respons Pemerintah/Elite", "5 Bantahan/Klarifikasi", "6 Analisis/Liputan Lanjutan", "7 Internasional"],
+        "Negatif/Krisis": [62.5, 42.9, 82.4, 50.0, 28.6, 50.0, 0.0],
+        "Penegakan Hukum Resmi": [18.8, 21.4, 41.2, 29.7, 57.1, 28.3, 5.3],
+        "Bantahan / Oknum": [87.5, 78.6, 0.0, 18.9, 78.6, 6.5, 0.0],
+        "Pengawasan Parlemen / Politik": [25.0, 0.0, 70.6, 73.0, 7.1, 47.8, 57.9]
+    }
+    df_lex = pd.DataFrame(lexicon_data)
+    fig_lex = px.bar(
+        df_lex,
+        x="Tahap Narasi",
+        y=["Negatif/Krisis", "Penegakan Hukum Resmi", "Bantahan / Oknum", "Pengawasan Parlemen / Politik"],
+        title="Dinamika Leksikon Framing Sepanjang 7 Tahap Narasi",
+        barmode="stack",
+        height=450
+    )
+    st.plotly_chart(fig_lex, use_container_width=True)
+
+# -----------------------------------------------------------------------------
+# TAB 6: PENJELAJAH DATA & EKSPOR
+# -----------------------------------------------------------------------------
+with tab_data:
+    st.subheader("Penjelajah Data Korpus Berita")
+    st.markdown(f"Menampilkan **{len(filtered_df)}** dari total **200** artikel berita terverifikasi.")
+
+    show_cols = ["No", "Media / Akun", "Judul / deskripsi", "Tanggal publikasi", "Tahap narasi", "Jenis sumber", "URL"]
+    valid_cols = [c for c in show_cols if c in filtered_df.columns]
+
+    st.dataframe(
+        filtered_df[valid_cols],
+        use_container_width=True,
+        hide_index=True
+    )
+
+    # Download Buttons
+    down_col1, down_col2 = st.columns(2)
+    with down_col1:
+        csv_data = filtered_df.to_csv(index=False).encode("utf-8")
+        st.download_button(
+            label="📥 Unduh Data Terfilter (CSV)",
+            data=csv_data,
+            file_name="data_penyadapan_prabowo_filtered.csv",
+            mime="text/csv",
+            use_container_width=True
+        )
+    with down_col2:
+        st.markdown(
+            f'<a href="https://github.com/25067020011-sudo/prabowo" target="_blank">'
+            f'<button style="width:100%; height:38px; background-color:#2563eb; color:white; border:none; border-radius:8px; font-weight:600; cursor:pointer;">'
+            f'🌐 Buka Repositori GitHub</button></a>',
+            unsafe_allow_html=True
+        )
+
+# Footer
+st.markdown("---")
+st.markdown("""
+<div style="text-align: center; color: #64748b; font-size: 0.85rem;">
+    Dashboard Analisis Jaringan Narasi Kasus Penyadapan Presiden &copy; 2026 | Berbasis Teori Network Agenda-Setting & Social Network Analysis
+</div>
+""", unsafe_allow_html=True)

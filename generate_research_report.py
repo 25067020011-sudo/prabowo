@@ -89,3 +89,4 @@ plt.tight_layout()
 plt.savefig('chart_proporsi_tahap_narasi.png', dpi=300)
 plt.close()
 print('Chart 3 created: chart_proporsi_tahap_narasi.png')
+
