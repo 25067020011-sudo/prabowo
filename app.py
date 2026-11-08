@@ -649,6 +649,10 @@ with tab_worlda:
     Alur kerja integrasi dari pengumpulan data (*World A.LIVE / News Scrapers / Social API*),
     validasi deduplikasi, pemrosesan analitik (*Reportica, NodeXL, Temporal Granger*), hingga diseminasi laporan riset Scopus Q1.
     """)
+    flowchart_img_path = "flowcharts/pipeline_flowchart.png"
+    if os.path.exists(flowchart_img_path):
+        st.image(flowchart_img_path, caption="Diagram Alir Pipeline Sistem Terpadu (World A.LIVE + NodeXL + Reportica)", width="stretch")
+
     st.markdown("""
     ```mermaid
     graph TD
