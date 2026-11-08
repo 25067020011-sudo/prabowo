@@ -7,5 +7,6 @@
     "Largest Component Size": 59,
     "Diameter (Giant Component)": 6,
     "Average Path Length (Geodesic Distance)": 2.8884,
-    "Average Clustering Coefficient": 0.0
+    "Average Clustering Coefficient (Bipartite Latapy)": 0.4825,
+    "Average Clustering Coefficient (One-Mode Actor Projection)": 0.6931
 }

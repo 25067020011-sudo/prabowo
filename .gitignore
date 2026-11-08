@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+.pytest_cache/
 
 # Pastikan seluruh berkas dataset CSV, JSON, GraphML, dan XLSX tetap terlacak Git
 !*.csv

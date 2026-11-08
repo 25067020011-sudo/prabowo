@@ -14,6 +14,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import networkx as nx
+from networkx.algorithms import bipartite
 from networkx.algorithms.community import louvain_communities, modularity
 import numpy as np
 import pandas as pd
@@ -114,7 +115,12 @@ def run_sna_analysis():
     G_sub = G.subgraph(largest_cc)
     diameter = nx.diameter(G_sub)
     avg_path_len = nx.average_shortest_path_length(G_sub)
-    avg_clustering = nx.average_clustering(G)
+    # Graf G adalah bipartit (Media <-> Narasumber), sehingga gunakan Latapy bipartite clustering
+    # serta one-mode actor projection clustering agar tidak bias ke 0.0
+    avg_clustering_bipartite = bipartite.average_clustering(G)
+    actor_nodes = [n for n, d in G.nodes(data=True) if d.get('node_type') == 'Narasumber']
+    G_actor_proj = bipartite.projected_graph(G, actor_nodes)
+    avg_clustering_projected = nx.average_clustering(G_actor_proj)
 
     network_metrics = {
         'Total Nodes (Simpul)': N,
@@ -125,7 +131,8 @@ def run_sna_analysis():
         'Largest Component Size': len(largest_cc),
         'Diameter (Giant Component)': diameter,
         'Average Path Length (Geodesic Distance)': round(avg_path_len, 4),
-        'Average Clustering Coefficient': round(avg_clustering, 4)
+        'Average Clustering Coefficient (Bipartite Latapy)': round(avg_clustering_bipartite, 4),
+        'Average Clustering Coefficient (One-Mode Actor Projection)': round(avg_clustering_projected, 4)
     }
 
     with open('sna_network_metrics.json', 'w', encoding='utf-8') as f:

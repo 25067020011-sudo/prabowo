@@ -494,6 +494,23 @@ with tab_rq3:
     )
     st.plotly_chart(fig_lex, width="stretch")
 
+    # Tampilkan Hasil Statistik CCF & Regime-Specific Granger Causality
+    st.markdown("---")
+    st.markdown("#### 📈 Verifikasi Ekonometrika: Cross-Correlation (CCF) & Regime-Switching Granger Causality")
+    ccf_col, granger_col = st.columns(2)
+    with ccf_col:
+        if os.path.exists("temporal_cross_correlation.csv"):
+            df_ccf_ui = pd.read_csv("temporal_cross_correlation.csv")
+            st.dataframe(df_ccf_ui, width="stretch", hide_index=True)
+    with granger_col:
+        if os.path.exists("temporal_granger_findings.json"):
+            with open("temporal_granger_findings.json", "r", encoding="utf-8") as fg:
+                granger_ui = json.load(fg)
+            u1 = granger_ui.get("Uji 1 (Fase 1 Pra-Konpers 15m: Public -> Media)", {})
+            u2 = granger_ui.get("Uji 2 (Fase 2 Pasca-Konpers 15m: Media -> Public)", {})
+            st.success(f"**Fase 1 (Public → Media):** F = `{u1.get('F-stat', '-')}`, p = `{u1.get('P-value', '-')}` ({u1.get('Status', '')})")
+            st.info(f"**Fase 2 (Media → Public):** F = `{u2.get('F-stat', '-')}`, p = `{u2.get('P-value', '-')}` ({u2.get('Status', '')})")
+
 # -----------------------------------------------------------------------------
 # TAB 6: 8 DIMENSI ANALISIS NODEXL & SOCIAL NETWORK ANALYSIS
 # -----------------------------------------------------------------------------
@@ -526,6 +543,7 @@ with tab_nodexl:
         st.markdown("""
         - **Simpul (Nodes):** 59 entitas (Media Massa & Narasumber/Aktor Kunci).
         - **Sisi (Edges):** 85 relasi penyiaran berita terbobot (*weighted bipartite edges*).
+        - **Bipartite Clustering (Latapy):** `0.4825` | **One-Mode Actor Projection Clustering:** `0.6931`.
         - **Layout:** *Fruchterman-Reingold / ForceAtlas2* memisahkan kutub hukum dan politik.
         """)
         try:

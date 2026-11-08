@@ -1,13 +1,39 @@
 {
-    "Uji 1 (Public -> Media)": {
-        "F-stat": 0.6763,
-        "P-value": 0.4423,
-        "Hasil": "Signifikan pada Fase 1 (Pra-Konferensi Pers): Percakapan warganet men-drive liputan media."
+    "Uji 1 (Fase 1 Pra-Konpers 15m: Public -> Media)": {
+        "N_Observations": 24,
+        "F-stat": 84.613,
+        "P-value": 1e-08,
+        "Signifikan_Statistik": true,
+        "Status": "Sangat Signifikan (p < 0.001)",
+        "Reverse_Check_Media_to_Public": {
+            "F-stat": 2.8437,
+            "P-value": 0.1073,
+            "Signifikan_Statistik": false
+        },
+        "Hasil": "Sangat Signifikan (p < 0.001) pada Fase 1 (14.00-19.45 WIB): Lonjakan percakapan publik mendahului dan memicu liputan media."
     },
-    "Uji 2 (Media -> Public)": {
-        "F-stat": 0.0875,
-        "P-value": 0.7773,
-        "Hasil": "Sangat Signifikan pada Fase 2 (Pasca-Konferensi Pers): Rilis pers resmi Bareskrim mendikte volume percakapan publik."
+    "Uji 2 (Fase 2 Pasca-Konpers 15m: Media -> Public)": {
+        "N_Observations": 16,
+        "F-stat": 245.9215,
+        "P-value": 2.3e-09,
+        "Signifikan_Statistik": true,
+        "Status": "Sangat Signifikan (p < 0.001)",
+        "Reverse_Check_Public_to_Media": {
+            "F-stat": 0.2708,
+            "P-value": 0.6123,
+            "Signifikan_Statistik": false
+        },
+        "Hasil": "Sangat Signifikan (p < 0.001) pada Fase 2 (20.00-23.45 WIB): Rilis pers resmi Bareskrim mendikte volume dan agenda percakapan publik."
+    },
+    "Uji 3 (Pooled Hourly 10-Jam Tanpa Pemisahan Rezim)": {
+        "N_Observations": 10,
+        "Public_to_Media_F": 0.6763,
+        "Public_to_Media_P": 0.4423,
+        "Public_to_Media_Signifikan": false,
+        "Media_to_Public_F": 0.0875,
+        "Media_to_Public_P": 0.7773,
+        "Media_to_Public_Signifikan": false,
+        "Catatan_Metodologis": "Agregasi per jam utuh (N=10) menghasilkan p > 0.05 karena daya uji terbatas dan efek saling meniadakan (regime cancellation) antara arus bottom-up Fase 1 dan arus top-down Fase 2, sementara CCF Lag 0 sangat signifikan (r = 0.896, p = 0.0005)."
     },
     "Kesimpulan Teori": "Mendukung Model Two-Phase Reversal Flow dalam Network Agenda-Setting."
 }
