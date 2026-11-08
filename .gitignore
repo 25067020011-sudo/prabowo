@@ -2,4 +2,12 @@ __pycache__/
 *.pyc
 .DS_Store
 
-
+# Pastikan seluruh berkas dataset CSV, JSON, GraphML, dan XLSX tetap terlacak Git
+!*.csv
+!input/**/*.csv
+!output/**/*.csv
+!vosviewer/*.csv
+!vosviewer/*.txt
+!*.json
+!*.graphml
+!*.xlsx

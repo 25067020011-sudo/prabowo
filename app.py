@@ -483,9 +483,17 @@ with tab_nodexl:
         st.markdown("### 3. ⭐ Analisis Influencer & Centrality Metrics")
         st.markdown("Identifikasi simpul paling berpengaruh berdasarkan 5 metrik sentralitas:")
         try:
-            df_infl = pd.read_csv("sna_influencer_centrality.csv")
-            top_infl = df_infl[df_infl["Tipe"] == "Narasumber"].head(6)
-            st.dataframe(top_infl[["Nama Simpul", "Degree", "Betweenness Centrality (Broker)", "Eigenvector Centrality", "PageRank"]], width="stretch", hide_index=True)
+            if os.path.exists("sna_influencer_centrality.csv"):
+                df_infl = pd.read_csv("sna_influencer_centrality.csv")
+                if "Tipe" in df_infl.columns:
+                    top_infl = df_infl[df_infl["Tipe"] == "Narasumber"].head(6)
+                else:
+                    top_infl = df_infl.head(6)
+                valid_infl_cols = [c for c in ["Nama Simpul", "Degree", "Betweenness Centrality (Broker)", "Eigenvector Centrality", "PageRank"] if c in top_infl.columns]
+                st.dataframe(top_infl[valid_infl_cols], width="stretch", hide_index=True)
+            elif os.path.exists("metrics_actor_centrality.csv"):
+                df_infl = pd.read_csv("metrics_actor_centrality.csv")
+                st.dataframe(df_infl, width="stretch", hide_index=True)
         except Exception:
             pass
 
