@@ -1,4 +1,6 @@
 import datetime
+import os
+import json
 import re
 import pandas as pd
 import plotly.express as px
@@ -133,13 +135,14 @@ st.markdown("---")
 # ==========================================
 # TABS UTAMA DASHBOARD
 # ==========================================
-tab_summary, tab_timeline, tab_rq1, tab_rq2, tab_rq3, tab_nodexl, tab_data = st.tabs([
+tab_summary, tab_timeline, tab_rq1, tab_rq2, tab_rq3, tab_nodexl, tab_worlda, tab_data = st.tabs([
     "📊 Ringkasan Eksekutif",
     "⏱️ Timeline & Jam Kritis (3 Nov)",
     "🕸️ RQ1: Jaringan Aktor & Broker",
     "👥 RQ2: Komunitas & Framing Publik",
     "🔄 RQ3: Network Agenda-Setting",
     "🌐 4 Pilar SNA & NodeXL Pro",
+    "🛰️ World A.LIVE & Kontradiksi",
     "📑 Penjelajah Data & Ekspor"
 ])
 
@@ -536,7 +539,149 @@ with tab_nodexl:
         """)
 
 # -----------------------------------------------------------------------------
-# TAB 7: PENJELAJAH DATA & EKSPOR
+# TAB 7: WORLD A.LIVE & KONTRADIKSI
+# -----------------------------------------------------------------------------
+with tab_worlda:
+    st.subheader("🛰️ Integrasi World A.LIVE & Deteksi Kontradiksi Narasi (Reportica)")
+    st.markdown("""
+    Tab ini mengintegrasikan feed berita publik dari **[World A.LIVE](https://worlda.live/indonesia/newspaper)**
+    dan mesin analisis **Reportica Intelligent** untuk memetakan pertentangan klaim naratif serta linimasa publikasi berita secara real-time.
+    """)
+
+    # 1. Headline Koran Harian World A.LIVE
+    worlda_news_path = "output/worlda/newspaper_edisi_terkini.json"
+    if os.path.exists(worlda_news_path):
+        try:
+            with open(worlda_news_path, "r", encoding="utf-8") as f:
+                news_meta = json.load(f)
+            
+            st.info(f"📰 **Edisi Koran Terkini:** {news_meta.get('edisi', 'Koran Harian')} — *{news_meta.get('deskripsi', '')}* (Total: {news_meta.get('total_berita', 0)} tajuk topik)")
+        except Exception:
+            pass
+
+    # 2. Dataset Linimasa 114 Berita Penyadapan Prabowo
+    topic_csv_path = "output/worlda/penyadapan_prabowo_114_berita.csv"
+    if os.path.exists(topic_csv_path):
+        df_worlda = pd.read_csv(topic_csv_path)
+        
+        st.markdown("### 1. ⏱️ Linimasa & Sebaran 114 Berita Penyadapan (World A.LIVE)")
+        st.markdown("Sebaran 114 liputan berita pada edisi Sabtu, 7 November 2026 berdasarkan jam tayang dan outlet media.")
+        
+        m_col1, m_col2, m_col3 = st.columns(3)
+        m_col1.metric("Total Berita Terkumpul", f"{len(df_worlda)}")
+        m_col2.metric("Jumlah Media Portal", f"{df_worlda['outlet'].nunique()} Outlet")
+        m_col3.metric("Puncak Pemberitaan", f"{df_worlda['hour_wib'].value_counts().index[0]}:00 WIB ({df_worlda['hour_wib'].value_counts().iloc[0]} Berita)")
+        
+        # Chart Distribusi Jam & Media
+        w_chart1, w_chart2 = st.columns(2)
+        with w_chart1:
+            hourly_counts = df_worlda.groupby("hour_wib").size().reset_index(name="Jumlah Berita")
+            hourly_counts["Jam"] = hourly_counts["hour_wib"].apply(lambda h: f"{int(h):02d}:00")
+            fig_w_hour = px.bar(
+                hourly_counts,
+                x="Jam",
+                y="Jumlah Berita",
+                title="Distribusi Frekuensi Berita per Jam (WIB)",
+                color="Jumlah Berita",
+                color_continuous_scale="Teal"
+            )
+            fig_w_hour.update_layout(height=350, margin=dict(l=20, r=20, t=40, b=20))
+            st.plotly_chart(fig_w_hour, width="stretch")
+            
+        with w_chart2:
+            top_outlets = df_worlda["outlet"].value_counts().head(8).reset_index()
+            top_outlets.columns = ["Media", "Jumlah Berita"]
+            fig_w_media = px.bar(
+                top_outlets,
+                x="Jumlah Berita",
+                y="Media",
+                orientation="h",
+                title="Top 8 Media Portal Paling Aktif",
+                color="Jumlah Berita",
+                color_continuous_scale="Blues"
+            )
+            fig_w_media.update_layout(height=350, yaxis=dict(autorange="reversed"), margin=dict(l=20, r=20, t=40, b=20))
+            st.plotly_chart(fig_w_media, width="stretch")
+
+        # Tabel Berita Interaktif
+        with st.expander("🔍 Buka Penjelajah 114 Artikel Berita Lengkap (Tautan & Waktu)", expanded=False):
+            st.dataframe(
+                df_worlda[["hour_wib", "outlet", "headline", "url"]].rename(columns={
+                    "hour_wib": "Jam (WIB)",
+                    "outlet": "Media Outlet",
+                    "headline": "Judul Berita",
+                    "url": "Tautan"
+                }),
+                width="stretch",
+                hide_index=True
+            )
+
+    # 3. Matriks Deteksi Kontradiksi (Reportica Engine)
+    contra_path = "reports/contradiction_matrix.json"
+    if os.path.exists(contra_path):
+        st.markdown("---")
+        st.markdown("### 2. ⚖️ Matriks Deteksi Kontradiksi Narasi (Reportica Intelligent Engine)")
+        st.markdown("""
+        Berdasarkan metodologi investigasi kontradiksi *(TinyFish / Reportica Intelligent)*,
+        perkembangan narasi dianalisis bukan dari mencari satu klaim yang benar,
+        melainkan **memetakan friksi antar-klaim berlawanan** (*contradictions as the signal*):
+        """)
+        
+        with open(contra_path, "r", encoding="utf-8") as f:
+            contra_data = json.load(f)
+            
+        for c in contra_data:
+            with st.container():
+                st.markdown(f"#### 📍 {c.get('axis', '')}")
+                c_col1, c_col2 = st.columns(2)
+                with c_col1:
+                    st.error(f"**Klaim A:** {c.get('claim_a_title', '')}")
+                    st.caption(f"Volume Liputan: **{c.get('claim_a_count', 0)} artikel** | Aktor Pengusung: *{c.get('claim_a_actors', '')}*")
+                with c_col2:
+                    st.success(f"**Klaim B:** {c.get('claim_b_title', '')}")
+                    st.caption(f"Volume Liputan: **{c.get('claim_b_count', 0)} artikel** | Aktor Pengusung: *{c.get('claim_b_actors', '')}*")
+                st.markdown("<hr style='margin: 8px 0;'>", unsafe_allow_html=True)
+
+    # 4. Diagram Alir Arsitektur Pipeline
+    st.markdown("---")
+    st.markdown("### 3. 🗺️ Diagram Alir Arsitektur Sistem Terpadu")
+    st.markdown("""
+    Alur kerja integrasi dari pengumpulan data (*World A.LIVE / News Scrapers / Social API*),
+    validasi deduplikasi, pemrosesan analitik (*Reportica, NodeXL, Temporal Granger*), hingga diseminasi laporan riset Scopus Q1.
+    """)
+    st.markdown("""
+    ```mermaid
+    graph TD
+        subgraph S1["1. DATA INGESTION LAYER"]
+            A1["World A.LIVE Topic Feed"] --> B1["Collector Module (worlda_collector.py)"]
+            A2["Direct Portal Scrapers (Antara, JawaPos, JPNN, Viva, dll.)"] --> B1
+            A3["Social Media Streams (X, WAG, YouTube API)"] --> B1
+        end
+
+        subgraph S2["2. PROCESSING & VALIDATION"]
+            B1 --> C1["Deduplication & Wire Origin Filter (ANTARA/Reuters)"]
+            C1 --> C2["Integrity Hashing (SHA-256) & Metadata Extraction"]
+            C2 --> C3[("Data Repository: data.xlsx / articles.csv")]
+        end
+
+        subgraph S3["3. ANALYTICS & INTELLIGENCE ENGINES"]
+            C3 --> D1["Reportica Engine (Contradiction & Framing Matrix)"]
+            C3 --> D2["SNA Engine (NodeXL Pro Bipartite & Community Detection)"]
+            C3 --> D3["Temporal Engine (Time-Series & Granger Causality)"]
+        end
+
+        subgraph S4["4. REPORTING & DISSEMINATION LAYER"]
+            D1 --> E1["Reportica Intelligence Brief (Executive Markdown)"]
+            D2 --> E2["NodeXL Pro Workbook (.xlsx) & GraphML"]
+            D3 --> E3["Scopus Q1 Academic Manuscript (IMRaD)"]
+            D1 & D2 & D3 --> E4["World A.LIVE Live Clone Dashboard (Streamlit Cloud)"]
+            E4 --> E5["Terminal Bash CLI Tool (worlda-intelligence.sh)"]
+        end
+    ```
+    """)
+
+# -----------------------------------------------------------------------------
+# TAB 8: PENJELAJAH DATA & EKSPOR
 # -----------------------------------------------------------------------------
 with tab_data:
     st.subheader("Penjelajah Data Korpus Berita")
