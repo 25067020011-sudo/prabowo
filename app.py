@@ -462,7 +462,10 @@ with tab_nodexl:
         - **Layout:** *Fruchterman-Reingold / ForceAtlas2* memisahkan kutub hukum dan politik.
         """)
         try:
-            st.image("chart_sna_network_map.png", caption="Peta Jaringan Bipartit (NodeXL & Louvain Clusters)", width="stretch")
+            if os.path.exists("chart_sna_network_map.png"):
+                st.image("chart_sna_network_map.png", caption="Peta Jaringan Bipartit (NodeXL & Louvain Clusters)", width="stretch")
+            elif os.path.exists("output/charts/entity_network.png"):
+                st.image("output/charts/entity_network.png", caption="Peta Jaringan Bipartit (NodeXL & Louvain Clusters)", width="stretch")
         except Exception:
             pass
 
@@ -561,8 +564,16 @@ with tab_worlda:
 
     # 2. Dataset Linimasa 114 Berita Penyadapan Prabowo
     topic_csv_path = "output/worlda/penyadapan_prabowo_114_berita.csv"
+    topic_json_path = "output/worlda/penyadapan_prabowo_114_berita.json"
+    df_worlda = None
     if os.path.exists(topic_csv_path):
         df_worlda = pd.read_csv(topic_csv_path)
+    elif os.path.exists(topic_json_path):
+        with open(topic_json_path, "r", encoding="utf-8") as f:
+            worlda_json = json.load(f)
+        df_worlda = pd.DataFrame(worlda_json.get("artikel", []))
+
+    if df_worlda is not None and not df_worlda.empty:
         
         st.markdown("### 1. ⏱️ Linimasa & Sebaran 114 Berita Penyadapan (World A.LIVE)")
         st.markdown("Sebaran 114 liputan berita pada edisi Sabtu, 7 November 2026 berdasarkan jam tayang dan outlet media.")

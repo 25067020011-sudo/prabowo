@@ -2,17 +2,17 @@ import os
 import sys
 
 # Jika file ini dieksekusi sebagai Main File oleh Streamlit Cloud,
-# jalankan dashboard interaktif utama di app.py
+# jalankan dashboard interaktif utama di app.py setiap kali rerun
 try:
     import streamlit as st
-    if st.runtime.exists():
-        import app
-        # Setelah app dijalankan oleh Streamlit, jangan lanjut ke kode pembuatan gambar
-        sys.exit(0)
-except SystemExit:
-    sys.exit(0)
-except Exception as e:
-    pass
+    _HAS_STREAMLIT_RUNTIME = bool(st.runtime.exists())
+except Exception:
+    _HAS_STREAMLIT_RUNTIME = False
+
+if _HAS_STREAMLIT_RUNTIME:
+    import runpy
+    runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), "app.py"), run_name="__main__")
+    st.stop()
 
 import re
 import pandas as pd

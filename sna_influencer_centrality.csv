@@ -1,0 +1,60 @@
+Nama Simpul,Tipe,Komunitas,Degree,Degree Centrality,Betweenness Centrality (Broker),Closeness Centrality,Eigenvector Centrality,PageRank
+Presiden Prabowo Subianto,Narasumber,G2,48,0.569,0.7588,0.5859,0.4609,0.1763
+Tersangka Jenderal (Purn) LSP,Narasumber,G1,40,0.3966,0.3211,0.4361,0.4803,0.1338
+Tutur.co.id,Media,G6,2,0.0345,0.1887,0.4028,0.0291,0.0123
+Mabes Polri / Divhumas,Narasumber,G6,6,0.1034,0.1664,0.3037,0.0019,0.0467
+Berita Jatim,Media,G4,3,0.0517,0.0955,0.4394,0.0636,0.0117
+Menko Yusril Ihza Mahendra,Narasumber,G3,12,0.1379,0.0741,0.3515,0.1888,0.0382
+PDI Perjuangan,Narasumber,G4,6,0.0862,0.0679,0.3392,0.0719,0.0224
+AFU.id,Media,G8,3,0.0517,0.0586,0.4328,0.0593,0.0141
+Bisnis.com,Media,G5,4,0.0517,0.0409,0.4328,0.0637,0.0146
+Kompas.id,Media,G3,2,0.0345,0.0356,0.3816,0.0408,0.0084
+Republika,Media,G3,2,0.0345,0.0356,0.3816,0.0408,0.0084
+Kilasberita,Media,G2,2,0.0345,0.0345,0.3766,0.0291,0.0123
+RMOL,Media,G7,2,0.0345,0.0296,0.3085,0.0334,0.0087
+ANTARA,Media,G3,6,0.0517,0.0287,0.3867,0.0954,0.0196
+JPNN,Media,G2,13,0.1034,0.0247,0.4677,0.2615,0.042
+IDN Times,Media,G1,2,0.0345,0.0241,0.4265,0.0591,0.0085
+Kompas.com,Media,G1,2,0.0345,0.0241,0.4265,0.0591,0.0085
+NU Online,Media,G1,2,0.0345,0.0241,0.4265,0.0591,0.0085
+NTVNews,Media,G2,2,0.0345,0.0241,0.4265,0.0591,0.0085
+Viva Bandung,Media,G1,2,0.0345,0.0241,0.4265,0.0591,0.0085
+Kapolri Jenderal Suyudi Ario Seto,Narasumber,G7,3,0.0517,0.018,0.3314,0.0511,0.0115
+Katadata,Media,G4,2,0.0345,0.0123,0.3118,0.0347,0.0086
+Harian Jogja,Media,G1,8,0.069,0.0113,0.4462,0.1926,0.0259
+Jawa Pos,Media,G3,24,0.1034,0.0087,0.4677,0.5196,0.0725
+Pakar Hukum / Pengamat Intelijen,Narasumber,G5,4,0.0517,0.0031,0.3277,0.0365,0.0142
+Komisi III DPR RI,Narasumber,G3,5,0.0345,0.0002,0.324,0.1099,0.0158
+RCTI+ (IDX Channel),Media,G3,1,0.0172,0.0,0.2613,0.0119,0.0052
+Fortune Indonesia,Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+Disway,Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+Borneo Globe,Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+Viva,Media,G1,3,0.0345,0.0,0.4265,0.0892,0.0114
+Justisio,Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+Kompas (English),Media,G1,1,0.0172,0.0,0.3053,0.0302,0.0054
+Okezone,Media,G1,7,0.0517,0.0,0.4394,0.1904,0.0229
+LIMS,Narasumber,G2,1,0.0172,0.0,0.2749,0.0018,0.0077
+Sumber Internal / Grup WA (Anonim),Narasumber,G8,1,0.0172,0.0,0.3037,0.0037,0.0065
+Kakinews,Media,G6,1,0.0172,0.0,0.2339,0.0001,0.0092
+Journalarta,Media,G4,1,0.0172,0.0,0.2544,0.0045,0.0057
+JawaPos,Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+Jakarta Globe,Media,G1,1,0.0172,0.0,0.3053,0.0302,0.0054
+JPNN Jateng,Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+Editor Indonesia,Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+Garuda TV,Media,G6,1,0.0172,0.0,0.2339,0.0001,0.0092
+RCTI+ (Sindonews),Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+CNN Indonesia (video),Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+Liputan6,Media,G1,4,0.0345,0.0,0.4265,0.1182,0.0145
+detikNews,Media,G2,2,0.0172,0.0,0.3718,0.0579,0.0088
+Mojok.co,Media,G1,1,0.0172,0.0,0.3053,0.0302,0.0054
+Media Indonesia,Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+RMOL Jateng,Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+Liputan6 (Enam Plus),Media,G1,1,0.0172,0.0,0.3053,0.0302,0.0054
+Suara.com,Media,G6,1,0.0172,0.0,0.2339,0.0001,0.0092
+TribunWow (2),Media,G1,1,0.0172,0.0,0.3053,0.0302,0.0054
+Lensa Indonesia,Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+Kompas.id (English),Media,G1,1,0.0172,0.0,0.3053,0.0302,0.0054
+RCTI+ (iNews),Media,G1,1,0.0172,0.0,0.3053,0.0302,0.0054
+Warta Jatim,Media,G6,1,0.0172,0.0,0.2339,0.0001,0.0092
+Wikipedia (id),Media,G2,1,0.0172,0.0,0.3718,0.0289,0.0057
+iNews Bekasi,Media,G6,1,0.0172,0.0,0.2339,0.0001,0.0092

@@ -1,0 +1,11 @@
+{
+    "Total Nodes (Simpul)": 59,
+    "Total Edges (Relasi)": 85,
+    "Network Density (Kerapatan)": 0.0497,
+    "Modularity Score (Q)": 0.3335,
+    "Connected Components": 1,
+    "Largest Component Size": 59,
+    "Diameter (Giant Component)": 6,
+    "Average Path Length (Geodesic Distance)": 2.8884,
+    "Average Clustering Coefficient": 0.0
+}
