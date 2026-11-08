@@ -1,0 +1,32 @@
+graph TD
+    subgraph S1["1. DATA INGESTION LAYER"]
+        A1["World A.LIVE Topic Feed"] --> B1["Collector Module (worlda_collector.py)"]
+        A2["Direct Portal Scrapers (Antara, JawaPos, JPNN, Viva, dll.)"] --> B1
+        A3["Social Media Streams (X, WAG, YouTube API)"] --> B1
+    end
+
+    subgraph S2["2. PROCESSING & VALIDATION"]
+        B1 --> C1["Deduplication & Wire Origin Filter (ANTARA/Reuters)"]
+        C1 --> C2["Integrity Hashing (SHA-256) & Metadata Extraction"]
+        C2 --> C3[("Data Repository: data.xlsx / articles.csv")]
+    end
+
+    subgraph S3["3. ANALYTICS & INTELLIGENCE ENGINES"]
+        C3 --> D1["Reportica Engine (Contradiction & Framing Matrix)"]
+        C3 --> D2["SNA Engine (NodeXL Pro Bipartite & Community Detection)"]
+        C3 --> D3["Temporal Engine (Time-Series & Granger Causality)"]
+    end
+
+    subgraph S4["4. REPORTING & DISSEMINATION LAYER"]
+        D1 --> E1["Reportica Intelligence Brief (Executive Markdown)"]
+        D2 --> E2["NodeXL Pro Workbook (.xlsx) & GraphML"]
+        D3 --> E3["Scopus Q1 Academic Manuscript (IMRaD)"]
+        D1 & D2 & D3 --> E4["World A.LIVE Live Clone Dashboard (Streamlit Cloud)"]
+        E4 --> E5["Terminal Bash CLI Tool (worlda-cli)"]
+    end
+
+    style S1 fill:#eff6ff,stroke:#3b82f6,stroke-width:2px
+    style S2 fill:#f0fdf4,stroke:#22c55e,stroke-width:2px
+    style S3 fill:#fefce8,stroke:#eab308,stroke-width:2px
+    style S4 fill:#faf5ff,stroke:#a855f7,stroke-width:2px
+

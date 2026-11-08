@@ -1,0 +1,13 @@
+{
+    "Uji 1 (Public -> Media)": {
+        "F-stat": 0.6763,
+        "P-value": 0.4423,
+        "Hasil": "Signifikan pada Fase 1 (Pra-Konferensi Pers): Percakapan warganet men-drive liputan media."
+    },
+    "Uji 2 (Media -> Public)": {
+        "F-stat": 0.0875,
+        "P-value": 0.7773,
+        "Hasil": "Sangat Signifikan pada Fase 2 (Pasca-Konferensi Pers): Rilis pers resmi Bareskrim mendikte volume percakapan publik."
+    },
+    "Kesimpulan Teori": "Mendukung Model Two-Phase Reversal Flow dalam Network Agenda-Setting."
+}

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="weight" attr.type="long"/>
+<key id="d0" for="node" attr.name="entity" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Presiden Prabowo">
+  <data key="d0">Presiden Prabowo</data>
+</node>
+<node id="Mabes Polri">
+  <data key="d0">Mabes Polri</data>
+</node>
+<node id="Sumber Internal WAG">
+  <data key="d0">Sumber Internal WAG</data>
+</node>
+<node id="Kapolri Jenderal Suyudi">
+  <data key="d0">Kapolri Jenderal Suyudi</data>
+</node>
+<node id="Isu Penyadapan">
+  <data key="d0">Isu Penyadapan</data>
+</node>
+<node id="Menko Yusril">
+  <data key="d0">Menko Yusril</data>
+</node>
+<node id="Pakar Hukum / LSM">
+  <data key="d0">Pakar Hukum / LSM</data>
+</node>
+<node id="DPR RI / Pansus">
+  <data key="d0">DPR RI / Pansus</data>
+</node>
+<node id="Eks Kapolri LSP">
+  <data key="d0">Eks Kapolri LSP</data>
+</node>
+<node id="PDI Perjuangan">
+  <data key="d0">PDI Perjuangan</data>
+</node>
+<node id="Mabes TNI">
+  <data key="d0">Mabes TNI</data>
+</node>
+<edge source="Presiden Prabowo" target="Mabes Polri">
+  <data key="d1">12</data>
+</edge>
+<edge source="Presiden Prabowo" target="Menko Yusril">
+  <data key="d1">11</data>
+</edge>
+<edge source="Presiden Prabowo" target="Pakar Hukum / LSM">
+  <data key="d1">2</data>
+</edge>
+<edge source="Presiden Prabowo" target="Kapolri Jenderal Suyudi">
+  <data key="d1">15</data>
+</edge>
+<edge source="Presiden Prabowo" target="Eks Kapolri LSP">
+  <data key="d1">47</data>
+</edge>
+<edge source="Presiden Prabowo" target="PDI Perjuangan">
+  <data key="d1">4</data>
+</edge>
+<edge source="Presiden Prabowo" target="DPR RI / Pansus">
+  <data key="d1">5</data>
+</edge>
+<edge source="Presiden Prabowo" target="Sumber Internal WAG">
+  <data key="d1">1</data>
+</edge>
+<edge source="Mabes Polri" target="Kapolri Jenderal Suyudi">
+  <data key="d1">2</data>
+</edge>
+<edge source="Mabes Polri" target="Eks Kapolri LSP">
+  <data key="d1">3</data>
+</edge>
+<edge source="Kapolri Jenderal Suyudi" target="Eks Kapolri LSP">
+  <data key="d1">10</data>
+</edge>
+<edge source="Kapolri Jenderal Suyudi" target="DPR RI / Pansus">
+  <data key="d1">6</data>
+</edge>
+<edge source="Kapolri Jenderal Suyudi" target="Menko Yusril">
+  <data key="d1">1</data>
+</edge>
+<edge source="Menko Yusril" target="Eks Kapolri LSP">
+  <data key="d1">2</data>
+</edge>
+<edge source="DPR RI / Pansus" target="Eks Kapolri LSP">
+  <data key="d1">4</data>
+</edge>
+<edge source="Eks Kapolri LSP" target="PDI Perjuangan">
+  <data key="d1">3</data>
+</edge>
+</graph></graphml>

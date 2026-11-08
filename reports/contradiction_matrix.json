@@ -1,0 +1,127 @@
+[
+    {
+        "id": "CONT-01",
+        "axis": "Status Hukum Aktor: Penangkapan vs Penetapan Tersangka",
+        "claim_a_title": "Penangkapan Fisik / Ditahan Mako Brimob",
+        "claim_a_count": 35,
+        "claim_a_actors": "Portal Berita Niche & Akun X Anonim",
+        "claim_a_samples": [
+            {
+                "media": "law-justice",
+                "title": "Isu penyadapan Presiden dikaitkan dengan penangkapan jenderal",
+                "url": "https://www.law-justice.co/artikel/212948/isu-penyadapan-presiden-prabowo-dikaitkan-dengan-penangkapan-jenderal/"
+            },
+            {
+                "media": "RMOL Jateng",
+                "title": "Geger berita penyadapan Istana: sejumlah jenderal dikabarkan ditangkap Divpropam",
+                "url": "https://www.rmoljawatengah.id/geger-berita-penyadapan-istana-sejumlah-jenderal-polri-dikabarkan-ditangkap-divpropam"
+            }
+        ],
+        "claim_b_title": "Penetapan Tersangka Tanpa Penangkapan Fisik",
+        "claim_b_count": 30,
+        "claim_b_actors": "Mabes Polri (Bareskrim Resmi)",
+        "claim_b_samples": [
+            {
+                "media": "CNN Indonesia",
+                "title": "Polri tetapkan 3 tersangka penyadapan, termasuk LSP dan ASN",
+                "url": "https://www.cnnindonesia.com/nasional/20261103124458-12-1422724/polri-tetapkan-3-tersangka-penyadapan-termasuk-lsp-dan-asn"
+            },
+            {
+                "media": "CNN Indonesia",
+                "title": "Bareskrim tetapkan LSP sebagai tersangka penyadapan Prabowo",
+                "url": "https://www.cnnindonesia.com/nasional/20261103201410-12-1422919/bareskrim-tetapkan-lsp-sebagai-tersangka-penyadapan-prabowo"
+            }
+        ]
+    },
+    {
+        "id": "CONT-02",
+        "axis": "Klasifikasi Perbuatan: Dugaan Makar vs Delik Penyadapan Ilegal",
+        "claim_a_title": "Tindakan Makar / Kudeta / Pengkhianatan Internal",
+        "claim_a_count": 16,
+        "claim_a_actors": "Warganet Kritis / Oposisi / Akun Spekulatif",
+        "claim_a_samples": [
+            {
+                "media": "Optika.id",
+                "title": "Isu operasi senyap Propam: jenderal bintang empat berinisial L dikabarkan diamankan",
+                "url": "https://optika.id/2026/11/03/isu-operasi-senyap-propam-polri-jenderal-bintang-empat-berinisial-l-dikabarkan-diamankan-terkait-dugaan-penyadapan-istana/"
+            },
+            {
+                "media": "CNN Indonesia (video)",
+                "title": "Mensesneg sebut Istana lebih waspada usai kasus penyadapan; BIN sebut mengarah ke dugaan makar",
+                "url": "https://www.cnnindonesia.com/tv/20261107131612-400-1424404/video-mensesneg-sebut-istana-lebih-waspada-usai-kasus-penyadapan"
+            }
+        ],
+        "claim_b_title": "Tindak Pidana Penyadapan Ilegal / Intersepsi Elektronik",
+        "claim_b_count": 16,
+        "claim_b_actors": "Penyidik Bareskrim & Ahli Hukum",
+        "claim_b_samples": [
+            {
+                "media": "detikNews",
+                "title": "Kronologi lengkap kasus penyadapan ilegal terhadap Presiden Prabowo",
+                "url": "https://news.detik.com/berita/d-8737086/kronologi-lengkap-kasus-penyadapan-ilegal-terhadap-presiden-prabowo"
+            },
+            {
+                "media": "SuperNews",
+                "title": "Skandal penyadapan ilegal Presiden: Bareskrim bongkar data LIMS",
+                "url": "https://supernews.co.id/skandal-penyadapan-ilegal-presiden-prabowo-bareskrim-bongkar-data-lims-bareskrim-ungkap-file-hasil-penyadapan-prabowo-dihapus-pada-oktober-2026/"
+            }
+        ]
+    },
+    {
+        "id": "CONT-03",
+        "axis": "Stabilitas Keamanan: Isu Gesekan Pasukan vs Bantahan Soliditas",
+        "claim_a_title": "Isu Pengerahan Pasukan / Ketegangan Matra",
+        "claim_a_count": 7,
+        "claim_a_actors": "Rumor WAG / Media Sosial",
+        "claim_a_samples": [
+            {
+                "media": "JPNN",
+                "title": "Pemerintah Klaim Situasi Jakarta Kondusif meski Ada Pengerahan Pasukan TNI",
+                "url": "https://www.jpnn.com/news/pemerintah-klaim-situasi-jakarta-kondusif-meski-ada-pengerahan-pasukan-tni"
+            },
+            {
+                "media": "Okezone",
+                "title": "Pengerahan Prajurit Besar-besaran ke Jakarta, TNI: Tak Perlu Dikaitkan Isu Apapun",
+                "url": "https://news.okezone.com/read/2026/11/04/337/3251991/pengerahan-prajurit-besar-besaran-ke-jakarta-tni-tak-perlu-dikaitkan-isu-apapun"
+            }
+        ],
+        "claim_b_title": "Bantahan Resmi & Soliditas TNI-Polri Terjaga",
+        "claim_b_count": 9,
+        "claim_b_actors": "Mabes TNI & Divhumas Polri",
+        "claim_b_samples": [
+            {
+                "media": "iNews",
+                "title": "Bareskrim bantah isu Tito dan Idham Azis ditangkap terkait penyadapan Prabowo",
+                "url": "https://www.inews.id/news/nasional/bareskrim-bantah-isu-tito-dan-idham-azis-ditangkap-terkait-penyadapan-prabowo-tidak-benar"
+            },
+            {
+                "media": "Harian Aceh",
+                "title": "Bareskrim bantah isu Tito dan Idham Azis ditangkap terkait penyadapan Prabowo",
+                "url": "https://www.harianaceh.co.id/2026/11/08/bareskrim-bantah-isu-tito-dan-idham-azis-ditangkap-terkait-penyadapan-prabowo-tidak-benar/"
+            }
+        ]
+    },
+    {
+        "id": "CONT-04",
+        "axis": "Kanal Informasi Kepala Negara: Spekulasi Liar vs Laporan Formal",
+        "claim_a_title": "Presiden Tahu Melalui Saluran Non-Formal / Intelijen Luar",
+        "claim_a_count": 0,
+        "claim_a_actors": "Spekulasi Publik / Media Independen",
+        "claim_a_samples": [],
+        "claim_b_title": "Presiden Mengetahui dari Laporan Resmi Kapolri Jenderal Suyudi",
+        "claim_b_count": 37,
+        "claim_b_actors": "Menko Yusril Ihza Mahendra (Pemerintah)",
+        "claim_b_samples": [
+            {
+                "media": "RMOL Jateng",
+                "title": "Geger berita penyadapan Istana: sejumlah jenderal dikabarkan ditangkap Divpropam",
+                "url": "https://www.rmoljawatengah.id/geger-berita-penyadapan-istana-sejumlah-jenderal-polri-dikabarkan-ditangkap-divpropam"
+            },
+            {
+                "media": "Kupastuntas",
+                "title": "Heboh kabar mantan Kapolri dan sejumlah jenderal ditangkap, ini respons Polri",
+                "url": "https://kupastuntas.co/2026/11/03/heboh-kabar-mantan-kapolri-listyo-sigit-dan-sejumlah-jenderal-polisi-ditangkap-terkait-dugaan-penyadapan-presiden-ini-respons-polri"
+            }
+        ]
+    }
+]
