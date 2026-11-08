@@ -653,6 +653,16 @@ with tab_worlda:
     if os.path.exists(flowchart_img_path):
         st.image(flowchart_img_path, caption="Diagram Alir Pipeline Sistem Terpadu (World A.LIVE + NodeXL + Reportica)", width="stretch")
 
+    # 5. Diagram Alir PRISMA 2020
+    st.markdown("---")
+    st.markdown("### 4. 📋 Diagram Alir Seleksi Korpus Berstandar PRISMA 2020")
+    st.markdown("""
+    Transparansi seleksi korpus berita dan respons publik digital mengikuti protokol baku **PRISMA 2020** (*Preferred Reporting Items for Systematic Reviews and Meta-Analyses*), memetakan 4 fase: **Identifikasi**, **Penyaringan**, **Kelayakan**, dan **Inklusi Final**.
+    """)
+    prisma_img_path = "flowcharts/prisma_2020_flowchart.png"
+    if os.path.exists(prisma_img_path):
+        st.image(prisma_img_path, caption="Diagram Alir PRISMA 2020 untuk Seleksi Korpus Berita & Diskursus Publik", width="stretch")
+
     st.markdown("""
     ```mermaid
     graph TD

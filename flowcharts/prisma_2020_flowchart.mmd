@@ -1,0 +1,45 @@
+flowchart TD
+    subgraph S_ID["IDENTIFIKASI (IDENTIFICATION)"]
+        A1["Catatan diidentifikasi dari pencarian basis data portal berita daring<br><b>(n = 342)</b>"]
+        A2["Catatan diidentifikasi dari agregator World A.LIVE & linimasa<br><b>(n = 148)</b>"]
+        A3["Catatan dari API media sosial (YouTube & X streams)<br><b>(n = 18,200)</b>"]
+        
+        DUP["Catatan duplikat dihapus via hash SHA-256<br><b>(n = 78)</b><br>Sindikasi kantor berita tanpa nilai tambah<br><b>(n = 46)</b>"]
+        
+        A1 & A2 --> DUP
+    end
+
+    subgraph S_SC["PENYARINGAN (SCREENING)"]
+        B1["Catatan berita disaring berdasarkan judul & deskripsi<br><b>(n = 366)</b>"]
+        B_EXC["Catatan berita dieksklusi:<br>• Tidak relevan / konten clickbait (n = 68)<br>• Tanpa stempel waktu terverifikasi (n = 44)"]
+        
+        DUP --> B1
+        B1 -->|Dieksklusi| B_EXC
+    end
+
+    subgraph S_EL["KELAYAKAN (ELIGIBILITY)"]
+        C1["Laporan teks lengkap dicari untuk pengambilan<br><b>(n = 254)</b>"]
+        C_NOT["Laporan tidak dapat diambil:<br>• Paywall / akses dibatasi (n = 18)"]
+        C2["Laporan dinilai kelayakannya secara substantif<br><b>(n = 236)</b>"]
+        C_EXC["Laporan dieksklusi:<br>• Kurang atribusi narasumber primer (n = 22)<br>• Konten agregasi ulang tanpa kutipan baru (n = 14)"]
+        
+        B1 -->|Lolos Saring| C1
+        C1 -->|Gagal Temu| C_NOT
+        C1 --> C2
+        C2 -->|Dieksklusi| C_EXC
+    end
+
+    subgraph S_IN["TERMASUK (INCLUDED)"]
+        D1["<b>Korpus Primer Berita Terverifikasi (n = 200)</b><br>• Sub-sampel Jam Kritis 3 Nov (n = 146)<br>• Analisis Jaringan Bipartit NodeXL Pro"]
+        D2["<b>Korpus Replikasi World A.LIVE (n = 114)</b><br>• Pengujian Difusi & Validasi Eksternal"]
+        D3["<b>Korpus Respons Publik Digital (n = 15,420)</b><br>• Klaster Louvain Komunitas Publik (Q = 0.33)"]
+        
+        C2 -->|Memenuhi Syarat| D1
+        A2 -.->|Replikasi Independen| D2
+        A3 -.->|Saring Sentimen & Bot| D3
+    end
+
+    style S_ID fill:#eff6ff,stroke:#3b82f6,stroke-width:2px
+    style S_SC fill:#fefce8,stroke:#eab308,stroke-width:2px
+    style S_EL fill:#f0fdf4,stroke:#22c55e,stroke-width:2px
+    style S_IN fill:#faf5ff,stroke:#a855f7,stroke-width:2px

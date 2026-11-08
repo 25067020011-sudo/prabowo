@@ -51,7 +51,27 @@ Mengacu pada Entman (1993), pembingkaian melibatkan proses seleksi dan penonjola
 ## 3. METODOLOGI PENELITIAN
 
 ### 3.1 Desain Penelitian & Korpus Data
-Penelitian ini menggunakan pendekatan kuantitatif-komputasional yang dipadukan dengan analisis kualitatif deskriptif (*sequential explanatory mixed-methods*):
+Penelitian ini menggunakan pendekatan kuantitatif-komputasional yang dipadukan dengan analisis kualitatif deskriptif (*sequential explanatory mixed-methods*). Seleksi dan audit korpus dilakukan dengan mematuhi pedoman baku **PRISMA 2020** (*Preferred Reporting Items for Systematic Reviews and Meta-Analyses*) yang mencakup 4 tahapan (*Identifikasi, Penyaringan, Kelayakan, dan Inklusi*):
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                        DIAGRAM ALIR PRISMA 2020 SELEKSI KORPUS                         │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ IDENTIFIKASI : Catatan diidentifikasi dari basis data 25 portal (n = 342),             │
+│                agregator World A.LIVE (n = 148), dan API media sosial (n = 18,200).    │
+│                Duplikat dihapus via hash SHA-256 (n = 78); sindikasi otomatis (n = 46).│
+│ PENYARINGAN  : Catatan disaring berdasarkan judul/metadata (n = 366 berita, 18,076 cmt)│
+│                Eksklusi: Konten clickbait/di luar konteks (n = 68), tanpa jam (n = 44) │
+│                          Spam/bot otomatis (n = 1,842), komentar tidak terbaca (n = 814)│
+│ KELAYAKAN    : Laporan teks lengkap dinilai kelayakannya secara mendalam (n = 254)     │
+│                Eksklusi: Paywall/link rusak (n = 18), minim atribusi kutipan (n = 22)  │
+│                          Agregasi ulang tanpa kutipan baru (n = 14)                    │
+│ TERMASUK     : Korpus Primer Berita Terverifikasi (N = 200; Sub-sampel Jam Kritis n=146)│
+│ (INCLUDED)     Korpus Replikasi Independen World A.LIVE (N = 114)                      │
+│                Korpus Interaksi Diskursus Publik Digital (N = 15,420 komentar valid)   │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+*Gambar 1: Diagram Alir PRISMA 2020 Seleksi Korpus Penelitian Jaringan dan Respons Publik.*
 
 1. **Korpus Media Berita ($N = 200$ Artikel):** Dikumpulkan melalui penelusuran sistematis dan scraping berbasis web terhadap portal berita terakreditasi di Indonesia dalam rentang 3–8 November 2026. Korpus mencakup media massa nasional (123 artikel), portal berita online (42 artikel), media daerah (17 artikel), dan media internasional (17 artikel berbahasa Inggris).
 2. **Korpus Media Sosial (NodeXL Pro Network):** Menggunakan data jaringan percakapan platform digital yang dianalisis menggunakan perangkat lunak NodeXL Pro, memanfaatkan algoritma *Clauset-Newman-Moore / Louvain community detection* untuk mengidentifikasi modularitas komunitas, *centrality metrics*, dan pasangan kata kunci dominan.
