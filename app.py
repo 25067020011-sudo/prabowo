@@ -674,6 +674,20 @@ with tab_worlda:
     if os.path.exists(prisma_img_path):
         st.image(prisma_img_path, caption="Diagram Alir PRISMA 2020 untuk Seleksi Korpus Berita & Diskursus Publik", width="stretch")
 
+    # 6. Peta Bibliometrik VOSviewer
+    st.markdown("---")
+    st.markdown("### 5. 🔬 Peta Bibliometrik Literatur VOSviewer (Co-Occurrence & Klaster Tematik)")
+    st.markdown("""
+    Pemetaan bibliometrik literatur global komunikasi politik dan krisis menggunakan **VOSviewer** membagi 40 kata kunci seminal ke dalam 4 klaster utama:
+    - **Klaster 1 (Merah):** *Third-Level Network Agenda-Setting & Cognitive Networks* (Guo & McCombs, Vargo).
+    - **Klaster 2 (Hijau):** *Crisis Communication, Political Scandals & Narrative Framing* (Entman, Coombs).
+    - **Klaster 3 (Biru):** *Social Network Analysis, Betweenness Centrality & Structural Holes* (Freeman, Burt).
+    - **Klaster 4 (Kuning):** *Hybrid Media Systems, Disinformation & Dark Social* (Chadwick, Bennett).
+    """)
+    vos_img_path = "vosviewer/vosviewer_bibliometric_map.png"
+    if os.path.exists(vos_img_path):
+        st.image(vos_img_path, caption="Peta Bibliometrik VOSviewer: Analisis Co-Occurrence Kata Kunci Seminal (4 Klaster Tematik)", width="stretch")
+
     st.markdown("""
     ```mermaid
     graph TD
@@ -722,23 +736,68 @@ with tab_data:
     )
 
     # Download Buttons
-    down_col1, down_col2 = st.columns(2)
-    with down_col1:
+    st.markdown("### 📥 Unduh Manuskrip Riset (26 Halaman), Buku Kerja NodeXL, & Data")
+    st.markdown("Seluruh berkas riset dapat diunduh langsung ke komputer/laptop Anda:")
+
+    pdf_path = "MANUSCRIPT_SCOPUS_Q1_26_PAGES.pdf"
+    docx_path = "MANUSCRIPT_SCOPUS_Q1_26_PAGES.docx"
+    nodexl_path = "nodexl_penyadapan_prabowo.xlsx"
+
+    dl_col1, dl_col2, dl_col3, dl_col4 = st.columns(4)
+
+    with dl_col1:
+        if os.path.exists(pdf_path):
+            with open(pdf_path, "rb") as f:
+                pdf_bytes = f.read()
+            st.download_button(
+                label="📄 Unduh Naskah 26 Hal (PDF)",
+                data=pdf_bytes,
+                file_name="MANUSCRIPT_SCOPUS_Q1_26_PAGES.pdf",
+                mime="application/pdf",
+                width="stretch"
+            )
+
+    with dl_col2:
+        if os.path.exists(docx_path):
+            with open(docx_path, "rb") as f:
+                docx_bytes = f.read()
+            st.download_button(
+                label="📝 Unduh Naskah Word (DOCX)",
+                data=docx_bytes,
+                file_name="MANUSCRIPT_SCOPUS_Q1_26_PAGES.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                width="stretch"
+            )
+
+    with dl_col3:
+        if os.path.exists(nodexl_path):
+            with open(nodexl_path, "rb") as f:
+                xlsx_bytes = f.read()
+            st.download_button(
+                label="📊 Unduh NodeXL Pro (.xlsx)",
+                data=xlsx_bytes,
+                file_name="nodexl_penyadapan_prabowo.xlsx",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                width="stretch"
+            )
+
+    with dl_col4:
         csv_data = filtered_df.to_csv(index=False).encode("utf-8")
         st.download_button(
-            label="📥 Unduh Data Terfilter (CSV)",
+            label="📑 Unduh Korpus CSV",
             data=csv_data,
             file_name="data_penyadapan_prabowo_filtered.csv",
             mime="text/csv",
             width="stretch"
         )
-    with down_col2:
-        st.markdown(
-            f'<a href="https://github.com/25067020011-sudo/prabowo" target="_blank">'
-            f'<button style="width:100%; height:38px; background-color:#2563eb; color:white; border:none; border-radius:8px; font-weight:600; cursor:pointer;">'
-            f'🌐 Buka Repositori GitHub</button></a>',
-            unsafe_allow_html=True
-        )
+
+    st.markdown("<br/>", unsafe_allow_html=True)
+    st.markdown(
+        f'<a href="https://github.com/25067020011-sudo/prabowo" target="_blank">'
+        f'<button style="width:100%; height:42px; background-color:#1e3a8a; color:white; border:none; border-radius:8px; font-weight:600; cursor:pointer;">'
+        f'🌐 Buka Repositori GitHub & Berkas VOSviewer</button></a>',
+        unsafe_allow_html=True
+    )
 
 # Footer
 st.markdown("---")

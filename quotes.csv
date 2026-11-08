@@ -1,0 +1,127 @@
+quote_id,article_id,speaker,speaker_type,quote_snippet,extraction_confidence,manually_verified
+Q-0001,ART-0002,Presiden Prabowo Subianto,pejabat,Geger berita penyadapan Istana: sejumlah jenderal dikabarkan ditangkap Divpropam,0.88,False
+Q-0002,ART-0003,Sumber Internal / Grup WA (Anonim),anonim,"Beredar WA grup diduga dari internal Polri, ungkap nama jenderal diperiksa",0.88,False
+Q-0003,ART-0005,Mabes Polri / Divhumas,aparat,"Viral sejumlah jenderal Polri ditangkap, begini penjelasan Mabes Polri",0.88,False
+Q-0004,ART-0009,Mabes Polri / Divhumas,aparat,"Isu jenderal Polri ditangkap terkait penyadapan Prabowo, respons Mabes Polri",0.88,False
+Q-0005,ART-0010,Presiden Prabowo Subianto,pejabat,Kronologi lengkap kasus penyadapan ilegal terhadap Presiden Prabowo,0.88,False
+Q-0006,ART-0011,Presiden Prabowo Subianto,pejabat,"Presiden Prabowo diduga disadap sejak 2025, file dihapus Oktober 2026",0.88,False
+Q-0007,ART-0012,Mabes Polri / Divhumas,aparat,Bareskrim Polri beberkan kronologi skandal penyadapan Presiden Prabowo,0.88,False
+Q-0008,ART-0012,Presiden Prabowo Subianto,pejabat,Bareskrim Polri beberkan kronologi skandal penyadapan Presiden Prabowo,0.88,False
+Q-0009,ART-0013,Menko Yusril Ihza Mahendra,pejabat,"Presiden Prabowo tahu dirinya disadap, Yusril: masalah serius negara",0.88,False
+Q-0010,ART-0013,Presiden Prabowo Subianto,pejabat,"Presiden Prabowo tahu dirinya disadap, Yusril: masalah serius negara",0.88,False
+Q-0011,ART-0015,Presiden Prabowo Subianto,pejabat,"Presiden Prabowo diduga disadap sejak 2025, Bareskrim dalami sistem LIMS",0.88,False
+Q-0012,ART-0019,LIMS,lainnya,Penyadapan Presiden Prabowo: Kabareskrim ungkap LIMS disalahgunakan,0.88,False
+Q-0013,ART-0019,Presiden Prabowo Subianto,pejabat,Penyadapan Presiden Prabowo: Kabareskrim ungkap LIMS disalahgunakan,0.88,False
+Q-0014,ART-0020,Presiden Prabowo Subianto,pejabat,"Presiden Prabowo disadap, pakar ingatkan risiko keamanan negara",0.88,False
+Q-0015,ART-0022,Presiden Prabowo Subianto,pejabat,Kasus dugaan penyadapan ilegal terhadap Presiden Prabowo Subianto,0.88,False
+Q-0016,ART-0025,Mabes Polri / Divhumas,aparat,"Geger kabar jenderal ditangkap dan diperiksa Propam, Mabes Polri gelar konferensi pers",0.88,False
+Q-0017,ART-0031,Mabes Polri / Divhumas,aparat,"Mabes Polri gelar konferensi pers, isu penangkapan jenderal memanas",0.88,False
+Q-0018,ART-0036,Mabes Polri / Divhumas,aparat,Mabes Polri buka suara soal jenderal bintang 4 diperiksa lalu dilepas,0.88,False
+Q-0019,ART-0041,Presiden Prabowo Subianto,pejabat,Istana dukung Polri ungkap dalang penyadapan Presiden,0.88,False
+Q-0020,ART-0042,Presiden Prabowo Subianto,pejabat,"Reaksi Istana soal penyadapan Presiden, Mensesneg: proses objektif",0.88,False
+Q-0021,ART-0043,Presiden Prabowo Subianto,pejabat,Istana waspada usai kasus penyadapan Prabowo terungkap,0.88,False
+Q-0022,ART-0044,Presiden Prabowo Subianto,pejabat,Mensesneg pastikan Istana bersih-bersih usai penyadapan ilegal Prabowo,0.88,False
+Q-0023,ART-0045,Presiden Prabowo Subianto,pejabat,Langkah Istana tanggapi kasus penyadapan Presiden: bersih-bersih terus,0.88,False
+Q-0024,ART-0046,Presiden Prabowo Subianto,pejabat,Mensesneg: Istana terus berbenah usai kasus penyadapan ilegal Prabowo,0.88,False
+Q-0025,ART-0047,Presiden Prabowo Subianto,pejabat,Mensesneg buka suara soal dugaan musuh dalam selimut di Istana,0.88,False
+Q-0026,ART-0048,Presiden Prabowo Subianto,pejabat,"Heboh skandal penyadapan, Istana tingkatkan kewaspadaan",0.88,False
+Q-0027,ART-0049,Presiden Prabowo Subianto,pejabat,Mensesneg sebut Istana lebih waspada usai kasus penyadapan; BIN sebut mengarah ke dugaan makar,0.88,False
+Q-0028,ART-0054,Tersangka Jenderal (Purn) LSP,aparat,Bareskrim tegas bantah rumor Mendagri dan eks Kapolri ditangkap,0.88,False
+Q-0029,ART-0055,Tersangka Jenderal (Purn) LSP,aparat,Bareskrim jawab isu dua eks Kapolri terseret kasus penyadapan Presiden,0.88,False
+Q-0030,ART-0059,Tersangka Jenderal (Purn) LSP,aparat,Indonesian National Police names General Listyo Sigit as suspect in illegal wiretapping of Prabowo,0.88,False
+Q-0031,ART-0060,Tersangka Jenderal (Purn) LSP,aparat,Former Indonesian police chief Listyo Sigit named suspect in alleged presidential wiretapping case,0.88,False
+Q-0032,ART-0064,Tersangka Jenderal (Purn) LSP,aparat,"Listyo Sigit Prabowo, from the circle of power to wiretapping",0.88,False
+Q-0033,ART-0069,Tersangka Jenderal (Purn) LSP,aparat,Jenderal Listyo Sigit diduga sadap Prabowo hingga pengusaha,0.88,False
+Q-0034,ART-0070,Presiden Prabowo Subianto,pejabat,Media asing ramai soroti kasus penyadapan Presiden Prabowo oleh eks Kapolri,0.88,False
+Q-0035,ART-0070,Tersangka Jenderal (Purn) LSP,aparat,Media asing ramai soroti kasus penyadapan Presiden Prabowo oleh eks Kapolri,0.88,False
+Q-0036,ART-0072,Presiden Prabowo Subianto,pejabat,Polri Tetapkan Jenderal Listyo Sigit Tersangka Penyadapan Presiden Prabowo,0.88,False
+Q-0037,ART-0072,Tersangka Jenderal (Purn) LSP,aparat,Polri Tetapkan Jenderal Listyo Sigit Tersangka Penyadapan Presiden Prabowo,0.88,False
+Q-0038,ART-0073,Presiden Prabowo Subianto,pejabat,Eks Kapolri Listyo Sigit Jadi Tersangka Penyadapan Ilegal Presiden Prabowo,0.88,False
+Q-0039,ART-0073,Tersangka Jenderal (Purn) LSP,aparat,Eks Kapolri Listyo Sigit Jadi Tersangka Penyadapan Ilegal Presiden Prabowo,0.88,False
+Q-0040,ART-0074,Presiden Prabowo Subianto,pejabat,Identitas 3 Jenderal Polri Tersangka Penyadapan Presiden Prabowo: Ada Eks Kapolri Listyo Sigit,0.88,False
+Q-0041,ART-0074,Tersangka Jenderal (Purn) LSP,aparat,Identitas 3 Jenderal Polri Tersangka Penyadapan Presiden Prabowo: Ada Eks Kapolri Listyo Sigit,0.88,False
+Q-0042,ART-0075,Presiden Prabowo Subianto,pejabat,"Jadi Tersangka Penyadapan Presiden Prabowo, Listyo Sigit dan 2 Jenderal Polri Dijerat 3 Pasal",0.88,False
+Q-0043,ART-0075,Tersangka Jenderal (Purn) LSP,aparat,"Jadi Tersangka Penyadapan Presiden Prabowo, Listyo Sigit dan 2 Jenderal Polri Dijerat 3 Pasal",0.88,False
+Q-0044,ART-0077,Presiden Prabowo Subianto,pejabat,"Tiga Tersangka Kasus Penyadapan Presiden Prabowo: Listyo Sigit, Eko Hadi dan Ahrie Sonta",0.88,False
+Q-0045,ART-0077,Tersangka Jenderal (Purn) LSP,aparat,"Tiga Tersangka Kasus Penyadapan Presiden Prabowo: Listyo Sigit, Eko Hadi dan Ahrie Sonta",0.88,False
+Q-0046,ART-0078,Menko Yusril Ihza Mahendra,pejabat,Yusril: Presiden Prabowo Tahu Jadi Korban Penyadapan Jenderal Listyo Cs,0.88,False
+Q-0047,ART-0078,Presiden Prabowo Subianto,pejabat,Yusril: Presiden Prabowo Tahu Jadi Korban Penyadapan Jenderal Listyo Cs,0.88,False
+Q-0048,ART-0079,Presiden Prabowo Subianto,pejabat,Presiden Prabowo Tahu Disadap Eks Kapolri Listyo Sigit dan 2 Jenderal,0.88,False
+Q-0049,ART-0079,Tersangka Jenderal (Purn) LSP,aparat,Presiden Prabowo Tahu Disadap Eks Kapolri Listyo Sigit dan 2 Jenderal,0.88,False
+Q-0050,ART-0080,Tersangka Jenderal (Purn) LSP,aparat,"Kasus Dugaan Penyadapan Presiden Libatkan Eks Kapolri, Gerindra: Bentuk Insubordinasi",0.88,False
+Q-0051,ART-0081,Menko Yusril Ihza Mahendra,pejabat,"Soal Penyadapan Ilegal, Yusril: Presiden Sudah Tahu",0.88,False
+Q-0052,ART-0084,Presiden Prabowo Subianto,pejabat,"Listyo Sadap Prabowo, Istana Sebut Ada Dugaan Makar",0.88,False
+Q-0053,ART-0085,PDI Perjuangan,lainnya,"Penyadapan Presiden, PDIP Desak Polri Usut Penyalahgunaan Wewenang",0.88,False
+Q-0054,ART-0086,Tersangka Jenderal (Purn) LSP,aparat,Mahfud MD Yakin Hasil Penyadapan Listyo Sigit Mengalir ke Geng Solo,0.88,False
+Q-0055,ART-0087,Tersangka Jenderal (Purn) LSP,aparat,"Listyo Sigit Ditetapkan Tersangka Penyadapan Prabowo, Jokowi Akhirnya Buka Suara!",0.88,False
+Q-0056,ART-0088,Tersangka Jenderal (Purn) LSP,aparat,"Buntut Kasus Jenderal Listyo Sigit Cs, DPR Bakal Revisi UU Penyadapan",0.88,False
+Q-0057,ART-0090,PDI Perjuangan,lainnya,Hasto Sekjen PDIP: Kasus Penyadapan LSP Melanggar HAM & Perlawanan Sistem Hukum (video),0.88,False
+Q-0058,ART-0091,Tersangka Jenderal (Purn) LSP,aparat,Reaksi Jokowi saat Ditanya Kasus Penyadapan Diduga Libatkan Listyo Sigit,0.88,False
+Q-0059,ART-0092,Tersangka Jenderal (Purn) LSP,aparat,Senyum Jokowi saat Ditanya soal Kasus Listyo Sigit,0.88,False
+Q-0060,ART-0093,Kapolri Jenderal Suyudi Ario Seto,aparat,DPR Taruh Harapan di Pundak Suyudi dan Jajaran Usut Tuntas Kasus Listyo Sigit Dkk,0.88,False
+Q-0061,ART-0093,Tersangka Jenderal (Purn) LSP,aparat,DPR Taruh Harapan di Pundak Suyudi dan Jajaran Usut Tuntas Kasus Listyo Sigit Dkk,0.88,False
+Q-0062,ART-0095,Presiden Prabowo Subianto,pejabat,"Penyadapan Presiden Prabowo, Mahfud: Jokowi dan Gibran Kok Enggak Disadap?",0.88,False
+Q-0063,ART-0097,Komisi III DPR RI,politisi,Komisi III DPR dan Kapolri rapat bahas kasus penyadapan pada Kamis,0.88,False
+Q-0064,ART-0099,Menko Yusril Ihza Mahendra,pejabat,"Ditanya Gibran Ikut Disadap Kayak Prabowo, Yusril: Wallahu A'lam",0.88,False
+Q-0065,ART-0100,Menko Yusril Ihza Mahendra,pejabat,Yusril: Prabowo Disadap Sejak 2 Bulan Menjabat sebagai Presiden RI,0.88,False
+Q-0066,ART-0101,Komisi III DPR RI,politisi,Komisi III DPR Akan Panggil Kapolri untuk Bongkar Dalang dan Motif Penyadapan Prabowo,0.88,False
+Q-0067,ART-0102,Komisi III DPR RI,politisi,"Komisi III DPR Bakal Panggil Kapolri, Dalami Penerima Manfaat Sadapan Prabowo",0.88,False
+Q-0068,ART-0103,Komisi III DPR RI,politisi,Komisi III DPR Dorong Polri Ungkap Motif Penyadapan Presiden oleh Eks Kapolri Listyo,0.88,False
+Q-0069,ART-0103,Tersangka Jenderal (Purn) LSP,aparat,Komisi III DPR Dorong Polri Ungkap Motif Penyadapan Presiden oleh Eks Kapolri Listyo,0.88,False
+Q-0070,ART-0104,Tersangka Jenderal (Purn) LSP,aparat,"Listyo Sigit Ditangkap Atas Kasus Penyadapan Presiden, Jokowi: Nanti Kita Tunggu",0.88,False
+Q-0071,ART-0105,PDI Perjuangan,lainnya,PDIP soal Dugaan Penyadapan Prabowo oleh Listyo Sigit cs: Disuruh Jokowi?,0.88,False
+Q-0072,ART-0105,Tersangka Jenderal (Purn) LSP,aparat,PDIP soal Dugaan Penyadapan Prabowo oleh Listyo Sigit cs: Disuruh Jokowi?,0.88,False
+Q-0073,ART-0106,Tersangka Jenderal (Purn) LSP,aparat,Bahlil Mengaku Ikut Disadap Eks Kapolri Listyo Sigit Prabowo,0.88,False
+Q-0074,ART-0107,Menko Yusril Ihza Mahendra,pejabat,Yusril Sebut Presiden Prabowo Sudah Tahu Dirinya Disadap,0.88,False
+Q-0075,ART-0107,Presiden Prabowo Subianto,pejabat,Yusril Sebut Presiden Prabowo Sudah Tahu Dirinya Disadap,0.88,False
+Q-0076,ART-0109,Presiden Prabowo Subianto,pejabat,"Presiden Prabowo Disadap Sejak 2025, Bagaimana dengan Wapres Gibran?",0.88,False
+Q-0077,ART-0110,Tersangka Jenderal (Purn) LSP,aparat,"Kalimat Mahfud MD soal Listyo Sigit Tersangka Penyadapan Prabowo, Makjleb!",0.88,False
+Q-0078,ART-0111,Tersangka Jenderal (Purn) LSP,aparat,"Listyo Sigit Terseret Kasus Penyadapan Prabowo, Mahfud MD: Gila!",0.88,False
+Q-0079,ART-0114,PDI Perjuangan,lainnya,Hasto PDIP Nilai Penyadapan ke Presiden Masuk Tindakan Makar,0.88,False
+Q-0080,ART-0115,PDI Perjuangan,lainnya,"Soal Kasus Penyadapan, Hasto PDIP: Melanggar HAM dan Perlawanan Sistem Hukum",0.88,False
+Q-0081,ART-0117,Kapolri Jenderal Suyudi Ario Seto,aparat,"Heboh Penyadapan Presiden, Sahroni: Saya Mendukung Jenderal Suyudi Mengusut Kasus Ini",0.88,False
+Q-0082,ART-0120,Presiden Prabowo Subianto,pejabat,Politikus PAN Desak Polri Bongkar Aktor Intelektual Penyadapan Presiden Prabowo,0.88,False
+Q-0083,ART-0121,Presiden Prabowo Subianto,pejabat,"Sambangi Polrestabes Semarang, Kader Gerindra Minta Motif Penyadapan Presiden Prabowo Diungkap",0.88,False
+Q-0084,ART-0122,Komisi III DPR RI,politisi,Komisi III DPR hormati proses hukum kasus penyadapan Presiden,0.88,False
+Q-0085,ART-0123,Presiden Prabowo Subianto,pejabat,Presiden Prabowo sangat prihatin atas kasus dugaan penyadapan,0.88,False
+Q-0086,ART-0124,Menko Yusril Ihza Mahendra,pejabat,Menko Yusril: Kasus penyadapan terhadap Presiden terindikasi makar,0.88,False
+Q-0087,ART-0128,Tersangka Jenderal (Purn) LSP,aparat,"Jadi Tersangka Penyadapan Presiden, Listyo Sigit Diberhentikan dari KSP",0.88,False
+Q-0088,ART-0129,Menko Yusril Ihza Mahendra,pejabat,Yusril Sebut Presiden Prabowo Sudah Tahu Dugaan Penyadapan Berkat Laporan Kapolri,0.88,False
+Q-0089,ART-0129,Presiden Prabowo Subianto,pejabat,Yusril Sebut Presiden Prabowo Sudah Tahu Dugaan Penyadapan Berkat Laporan Kapolri,0.88,False
+Q-0090,ART-0130,Tersangka Jenderal (Purn) LSP,aparat,Gerindra Singgung Kemungkinan Makar di Kasus Penyadapan Prabowo oleh Listyo Sigit Cs,0.88,False
+Q-0091,ART-0132,Menko Yusril Ihza Mahendra,pejabat,Yusril Ungkap Prabowo Sudah Tahu Jadi Target Penyadapan Ilegal Listyo Sigit Cs,0.88,False
+Q-0092,ART-0132,Tersangka Jenderal (Purn) LSP,aparat,Yusril Ungkap Prabowo Sudah Tahu Jadi Target Penyadapan Ilegal Listyo Sigit Cs,0.88,False
+Q-0093,ART-0133,Presiden Prabowo Subianto,pejabat,Respons Datar Jokowi soal Kasus Penyadapan terhadap Presiden Prabowo oleh Listyo Sigit,0.88,False
+Q-0094,ART-0133,Tersangka Jenderal (Purn) LSP,aparat,Respons Datar Jokowi soal Kasus Penyadapan terhadap Presiden Prabowo oleh Listyo Sigit,0.88,False
+Q-0095,ART-0134,Presiden Prabowo Subianto,pejabat,"Presiden Prabowo Disadap Listyo Sigit, Hasto Blak-blakan: PDIP Dulu Juga Pernah",0.88,False
+Q-0096,ART-0134,PDI Perjuangan,lainnya,"Presiden Prabowo Disadap Listyo Sigit, Hasto Blak-blakan: PDIP Dulu Juga Pernah",0.88,False
+Q-0097,ART-0134,Tersangka Jenderal (Purn) LSP,aparat,"Presiden Prabowo Disadap Listyo Sigit, Hasto Blak-blakan: PDIP Dulu Juga Pernah",0.88,False
+Q-0098,ART-0142,Pakar Hukum / Pengamat Intelijen,pakar,"Prabowo Disadap, Pengamat Singgung Kelemahan 2G dan Penyalahgunaan Kekuasaan",0.88,False
+Q-0099,ART-0143,Pakar Hukum / Pengamat Intelijen,pakar,"Kasus Penyadapan Presiden, Pengamat Siber Minta Sistem LIMS Diaudit Total",0.88,False
+Q-0100,ART-0147,Tersangka Jenderal (Purn) LSP,aparat,Bareskrim: Listyo Sigit Cs Ditahan di Mako Brimob!,0.88,False
+Q-0101,ART-0153,Presiden Prabowo Subianto,pejabat,Empat Jenderal Polri Jadi Tersangka Kasus Dugaan Penyadapan Presiden Prabowo,0.88,False
+Q-0102,ART-0155,Presiden Prabowo Subianto,pejabat,"Profil Jenderal Listyo Sigit Prabowo, Eks Kapolri Tersangka Penyadapan Presiden Prabowo",0.88,False
+Q-0103,ART-0155,Tersangka Jenderal (Purn) LSP,aparat,"Profil Jenderal Listyo Sigit Prabowo, Eks Kapolri Tersangka Penyadapan Presiden Prabowo",0.88,False
+Q-0104,ART-0156,Presiden Prabowo Subianto,pejabat,Peran Irjen Slamet Uliandi: Pemegang Kendali Penyadapan Presiden Prabowo,0.88,False
+Q-0105,ART-0159,Presiden Prabowo Subianto,pejabat,Kasus Penyadapan Presiden Prabowo: Listyo Sigit Cs Resmi Ditahan di Mako Brimob Depok,0.88,False
+Q-0106,ART-0159,Tersangka Jenderal (Purn) LSP,aparat,Kasus Penyadapan Presiden Prabowo: Listyo Sigit Cs Resmi Ditahan di Mako Brimob Depok,0.88,False
+Q-0107,ART-0160,Kapolri Jenderal Suyudi Ario Seto,aparat,Kapolri Suyudi Dapat Dukungan Keluarga Besar Brimob untuk Ungkap Penyadapan,0.88,False
+Q-0108,ART-0161,Presiden Prabowo Subianto,pejabat,Irjen Slamet Uliandi Jadi Tersangka Baru Kasus Penyadapan Presiden Prabowo,0.88,False
+Q-0109,ART-0163,Tersangka Jenderal (Purn) LSP,aparat,Karier Jenderal Listyo Sigit Eks Kapolri Pilihan Jokowi Berakhir Pahit,0.88,False
+Q-0110,ART-0164,Pakar Hukum / Pengamat Intelijen,pakar,"Soal Kasus Penyadapan Presiden, Pengamat Tangkap Kepentingan Politik Jangka Pendek",0.88,False
+Q-0111,ART-0166,Presiden Prabowo Subianto,pejabat,"Mengenal LIMS, alat yang digunakan untuk menyadap Presiden Prabowo",0.88,False
+Q-0112,ART-0170,Presiden Prabowo Subianto,pejabat,Profil Listyo Sigit: Jendral Kepercayaan Jokowi jadi Tersangka Penyadapan Presiden Prabowo,0.88,False
+Q-0113,ART-0170,Tersangka Jenderal (Purn) LSP,aparat,Profil Listyo Sigit: Jendral Kepercayaan Jokowi jadi Tersangka Penyadapan Presiden Prabowo,0.88,False
+Q-0114,ART-0171,Tersangka Jenderal (Purn) LSP,aparat,"Profil Listyo Sigit Prabowo, dari Ajudan Jokowi hingga Terseret Kasus Penyadapan",0.88,False
+Q-0115,ART-0172,Pakar Hukum / Pengamat Intelijen,pakar,"Kasus Penyadapan Presiden, Pengamat Desak Aktor di Balik Layar Diusut",0.88,False
+Q-0116,ART-0173,Presiden Prabowo Subianto,pejabat,"Kasus Penyadapan Ponsel Presiden Prabowo, Pakar UII Soroti Fungsi LIMS",0.88,False
+Q-0117,ART-0174,Presiden Prabowo Subianto,pejabat,"Kasus Penyadapan Presiden Prabowo: Susul Listyo Sigit, Irjen Slamet Uliandi Tersangka",0.88,False
+Q-0118,ART-0174,Tersangka Jenderal (Purn) LSP,aparat,"Kasus Penyadapan Presiden Prabowo: Susul Listyo Sigit, Irjen Slamet Uliandi Tersangka",0.88,False
+Q-0119,ART-0175,Tersangka Jenderal (Purn) LSP,aparat,"Listyo Sigit dan 2 Jenderal Ditahan di Mako Brimob, Slamet Uliandi Masih Bebas",0.88,False
+Q-0120,ART-0177,Tersangka Jenderal (Purn) LSP,aparat,"Proses dan Motif Penyadapan Nomor Presiden oleh Listyo Sigit Dkk, Prabowo Prihatin dan Perintahkan Tak Pandang Bulu",0.88,False
+Q-0121,ART-0178,Presiden Prabowo Subianto,pejabat,Apa Itu LIMS yang Diduga untuk Menyadap Presiden Prabowo?,0.88,False
+Q-0122,ART-0195,Menko Yusril Ihza Mahendra,pejabat,Menko Yusril: Kasus penyadapan ilegal tidak terindikasi makar,0.88,False
+Q-0123,ART-0196,Menko Yusril Ihza Mahendra,pejabat,Yusril Tegaskan Kasus Penyadapan Presiden Prabowo Belum Mengarah ke Makar,0.88,False
+Q-0124,ART-0196,Presiden Prabowo Subianto,pejabat,Yusril Tegaskan Kasus Penyadapan Presiden Prabowo Belum Mengarah ke Makar,0.88,False
+Q-0125,ART-0197,Menko Yusril Ihza Mahendra,pejabat,"Yusril Ungkap Penyadapan Prabowo Mengarah ke Makar, Diduga untuk Lumpuhkan Kekuasaan Presiden",0.88,False
+Q-0126,ART-0199,Presiden Prabowo Subianto,pejabat,"Kasus Penyadapan Presiden Prabowo, Polri Diminta Usut Dugaan Makar hingga Aktor Intelektual",0.88,False

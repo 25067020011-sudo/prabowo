@@ -1,0 +1,8 @@
+Lag (Jam),Arah Hipotesis,Korelasi Pearson (r),P-Value,Signifikan (p < 0.05)
+-3,Publik mendahului Media lag 3 jam,0.2671,0.5626,Tidak
+-2,Publik mendahului Media lag 2 jam,0.281,0.5002,Tidak
+-1,Publik mendahului Media lag 1 jam,0.5722,0.1074,Tidak
+0,Simultan (Lag 0),0.896,0.0005,Ya
+1,Media mendahului Publik lag 1 jam,0.618,0.0761,Tidak
+2,Media mendahului Publik lag 2 jam,0.04,0.9251,Tidak
+3,Media mendahului Publik lag 3 jam,-0.2451,0.5963,Tidak

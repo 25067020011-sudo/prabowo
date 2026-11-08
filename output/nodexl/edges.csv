@@ -1,0 +1,30 @@
+Vertex 1,Vertex 2,Edge Weight
+Isu Makar,Mahkamah Konstitusi,1
+Isu Makar,Penyadapan Ilegal,6
+Isu Makar,Prabowo Subianto,6
+Isu Makar,Hasto Kristiyanto / PDIP,1
+Isu Makar,Joko Widodo,1
+Isu Makar,Polri / Kapolri,3
+Isu Makar,Andi Gani / KSPSI,1
+Mahkamah Konstitusi,Penyadapan Ilegal,2
+Mahkamah Konstitusi,Prabowo Subianto,1
+Mahkamah Konstitusi,Hasto Kristiyanto / PDIP,1
+Penyadapan Ilegal,Prabowo Subianto,46
+Penyadapan Ilegal,Pakar Hukum / Akademisi,31
+Penyadapan Ilegal,Hasto Kristiyanto / PDIP,2
+Penyadapan Ilegal,Polri / Kapolri,24
+Penyadapan Ilegal,Bahlil Lahadalia,26
+Penyadapan Ilegal,Habiburokhman / Gerindra,2
+Penyadapan Ilegal,Joko Widodo,6
+Prabowo Subianto,Pakar Hukum / Akademisi,22
+Prabowo Subianto,Bahlil Lahadalia,17
+Prabowo Subianto,Hasto Kristiyanto / PDIP,1
+Prabowo Subianto,Polri / Kapolri,17
+Prabowo Subianto,Habiburokhman / Gerindra,1
+Prabowo Subianto,Joko Widodo,5
+Polri / Kapolri,Habiburokhman / Gerindra,3
+Polri / Kapolri,Bahlil Lahadalia,8
+Polri / Kapolri,Pakar Hukum / Akademisi,8
+Polri / Kapolri,Joko Widodo,2
+Polri / Kapolri,Andi Gani / KSPSI,2
+Pakar Hukum / Akademisi,Bahlil Lahadalia,33
