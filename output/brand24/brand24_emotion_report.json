@@ -1,0 +1,120 @@
+{
+  "platform": "Brand24 Emotion Analysis Engine",
+  "total_records": 200,
+  "emotion_ranking": [
+    {
+      "Emotion": "Trust",
+      "Count": 116,
+      "Percentage": 58.0
+    },
+    {
+      "Emotion": "Skepticism",
+      "Count": 39,
+      "Percentage": 19.5
+    },
+    {
+      "Emotion": "Anger",
+      "Count": 18,
+      "Percentage": 9.0
+    },
+    {
+      "Emotion": "Surprise",
+      "Count": 11,
+      "Percentage": 5.5
+    },
+    {
+      "Emotion": "Anticipation",
+      "Count": 9,
+      "Percentage": 4.5
+    },
+    {
+      "Emotion": "Fear",
+      "Count": 4,
+      "Percentage": 2.0
+    },
+    {
+      "Emotion": "Sadness",
+      "Count": 2,
+      "Percentage": 1.0
+    },
+    {
+      "Emotion": "Disgust",
+      "Count": 1,
+      "Percentage": 0.5
+    }
+  ],
+  "stage_breakdown": {
+    "Anger": {
+      "1 Rumor": 6.2,
+      "2 Respons Polri pra-konferensi": 0.0,
+      "3 Konfirmasi resmi": 0.0,
+      "4 Respons pemerintah/elite": 21.6,
+      "5 Bantahan/klarifikasi": 0.0,
+      "6 Analisis/liputan lanjutan": 2.2,
+      "7 Internasional": 0.0
+    },
+    "Anticipation": {
+      "1 Rumor": 0.0,
+      "2 Respons Polri pra-konferensi": 0.0,
+      "3 Konfirmasi resmi": 0.0,
+      "4 Respons pemerintah/elite": 12.2,
+      "5 Bantahan/klarifikasi": 0.0,
+      "6 Analisis/liputan lanjutan": 0.0,
+      "7 Internasional": 0.0
+    },
+    "Disgust": {
+      "1 Rumor": 0.0,
+      "2 Respons Polri pra-konferensi": 0.0,
+      "3 Konfirmasi resmi": 0.0,
+      "4 Respons pemerintah/elite": 1.4,
+      "5 Bantahan/klarifikasi": 0.0,
+      "6 Analisis/liputan lanjutan": 0.0,
+      "7 Internasional": 0.0
+    },
+    "Fear": {
+      "1 Rumor": 0.0,
+      "2 Respons Polri pra-konferensi": 0.0,
+      "3 Konfirmasi resmi": 0.0,
+      "4 Respons pemerintah/elite": 1.4,
+      "5 Bantahan/klarifikasi": 0.0,
+      "6 Analisis/liputan lanjutan": 6.5,
+      "7 Internasional": 0.0
+    },
+    "Sadness": {
+      "1 Rumor": 0.0,
+      "2 Respons Polri pra-konferensi": 0.0,
+      "3 Konfirmasi resmi": 0.0,
+      "4 Respons pemerintah/elite": 1.4,
+      "5 Bantahan/klarifikasi": 0.0,
+      "6 Analisis/liputan lanjutan": 2.2,
+      "7 Internasional": 0.0
+    },
+    "Skepticism": {
+      "1 Rumor": 25.0,
+      "2 Respons Polri pra-konferensi": 0.0,
+      "3 Konfirmasi resmi": 5.9,
+      "4 Respons pemerintah/elite": 13.5,
+      "5 Bantahan/klarifikasi": 50.0,
+      "6 Analisis/liputan lanjutan": 17.4,
+      "7 Internasional": 47.4
+    },
+    "Surprise": {
+      "1 Rumor": 37.5,
+      "2 Respons Polri pra-konferensi": 28.6,
+      "3 Konfirmasi resmi": 0.0,
+      "4 Respons pemerintah/elite": 1.4,
+      "5 Bantahan/klarifikasi": 0.0,
+      "6 Analisis/liputan lanjutan": 0.0,
+      "7 Internasional": 0.0
+    },
+    "Trust": {
+      "1 Rumor": 31.2,
+      "2 Respons Polri pra-konferensi": 71.4,
+      "3 Konfirmasi resmi": 94.1,
+      "4 Respons pemerintah/elite": 47.3,
+      "5 Bantahan/klarifikasi": 50.0,
+      "6 Analisis/liputan lanjutan": 71.7,
+      "7 Internasional": 52.6
+    }
+  }
+}

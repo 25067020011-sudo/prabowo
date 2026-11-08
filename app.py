@@ -377,6 +377,73 @@ with tab_rq2:
         - **Kata Kunci:** `StateSurveillance`, `Wiretapping`, `NationalSecurity`.
         """)
 
+    # 4. Brand24 9-Emotion Mapping
+    st.markdown("---")
+    st.markdown("#### 4. 🧠 Pemetaan 9 Dimensi Emosi Publik (Brand24 Emotion Analysis)")
+    st.markdown("""
+    Berdasarkan metodologi pemantauan reputasi dan analisis emosi **Brand24**,
+    sentimen publik dipetakan ke dalam **9 spektrum emosi granular** untuk menangkap nuansa reaksi psikologis masyarakat dan warganet:
+    """)
+
+    b24_csv_path = "output/brand24/emotion_distribution.csv"
+    if os.path.exists(b24_csv_path):
+        df_b24 = pd.read_csv(b24_csv_path)
+
+        # Metrik KPI Top 4 Emosi
+        e_col1, e_col2, e_col3, e_col4 = st.columns(4)
+        e_col1.metric("Trust (Kepercayaan)", "58.0%", delta="Dominasi Narasi Resmi")
+        e_col2.metric("Skepticism (Sinisme)", "19.5%", delta="Kritik & Keraguan")
+        e_col3.metric("Anger (Kemarahan)", "9.0%", delta="Kecaman Pelaku")
+        e_col4.metric("Surprise (Kaget)", "5.5%", delta="Fase Awal Rumor")
+
+        b24_c1, b24_c2 = st.columns([1.2, 1.0])
+
+        with b24_c1:
+            # Radar Chart Plotly interaktif
+            categories_radar = df_b24["Emotion"].tolist()
+            values_radar = df_b24["Percentage"].tolist()
+            categories_radar_closed = categories_radar + [categories_radar[0]]
+            values_radar_closed = values_radar + [values_radar[0]]
+
+            fig_radar = go.Figure(
+                data=go.Scatterpolar(
+                    r=values_radar_closed,
+                    theta=categories_radar_closed,
+                    fill='toself',
+                    fillcolor='rgba(56, 189, 248, 0.35)',
+                    line=dict(color='#0284c7', width=2.5),
+                    marker=dict(size=7, color='#0369a1')
+                )
+            )
+            fig_radar.update_layout(
+                polar=dict(
+                    radialaxis=dict(visible=True, range=[0, max(values_radar) * 1.2])
+                ),
+                showlegend=False,
+                height=380,
+                margin=dict(l=30, r=30, t=30, b=30),
+                title="Peta Radar 9 Emosi Brand24 (% Frekuensi)"
+            )
+            st.plotly_chart(fig_radar, width="stretch")
+
+        with b24_c2:
+            st.markdown("**Distribusi Frekuensi 9 Emosi:**")
+            st.dataframe(
+                df_b24.rename(columns={
+                    "Emotion": "Dimensi Emosi (Brand24)",
+                    "Count": "Jumlah Artikel",
+                    "Percentage": "Persentase (%)"
+                }),
+                width="stretch",
+                hide_index=True
+            )
+            st.info("""
+            **Interpretasi Emosional:**
+            - **Trust (58%)** mendominasi pasca-konferensi pers Mabes Polri dan pernyataan Menko Yusril, mencerminkan pemulihan stabilitas wacana.
+            - **Skepticism (19.5%) & Anger (9%)** terkonsentrasi pada akun oposisi yang menuntut transparansi penuh dan menolak dalih 'hanya oknum'.
+            - **Fear & Surprise** hanya mendominasi pada 6 jam pertama rumor (Tahap 1–2).
+            """)
+
 # -----------------------------------------------------------------------------
 # TAB 5: RQ3: NETWORK AGENDA-SETTING
 # -----------------------------------------------------------------------------

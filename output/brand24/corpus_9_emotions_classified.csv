@@ -1,0 +1,201 @@
+No,Media / Akun,Judul,Tahap narasi,Dominant Emotion,Anger,Fear,Sadness,Trust,Disgust,Joy / Relief,Anticipation,Surprise,Skepticism
+1,law-justice,Isu penyadapan Presiden dikaitkan dengan penangkapan jenderal,1 Rumor,Skepticism,0,0,0,0,0,0,0,0,0
+2,RMOL Jateng,Geger berita penyadapan Istana: sejumlah jenderal dikabarkan ditangkap Divpropam,1 Rumor,Surprise,0,0,0,0,0,0,0,1,0
+3,AFU.id,"Beredar WA grup diduga dari internal Polri, ungkap nama jenderal diperiksa",1 Rumor,Trust,0,0,0,0,0,0,0,0,0
+4,Optika.id,Isu operasi senyap Propam: jenderal bintang empat berinisial L dikabarkan diamankan,1 Rumor,Skepticism,0,0,0,0,0,0,0,0,0
+5,iNews Bekasi,"Viral sejumlah jenderal Polri ditangkap, begini penjelasan Mabes Polri",2 Respons Polri pra-konferensi,Surprise,0,0,0,0,0,0,0,1,0
+6,Suaraislam.id,Sejumlah jenderal polisi ditangkap terkait isu penyadapan Presiden,1 Rumor,Skepticism,0,0,0,0,0,0,0,0,0
+7,Kupastuntas,"Heboh kabar mantan Kapolri dan sejumlah jenderal ditangkap, ini respons Polri",1 Rumor,Surprise,0,0,0,0,0,0,0,1,0
+8,Tribun Shopping,Konferensi pers isu penangkapan jenderal Polri terkait penyadapan,2 Respons Polri pra-konferensi,Trust,0,0,0,0,0,0,0,0,0
+9,Warta Jatim,"Isu jenderal Polri ditangkap terkait penyadapan Prabowo, respons Mabes Polri",2 Respons Polri pra-konferensi,Trust,0,0,0,1,0,0,0,0,0
+10,detikNews,Kronologi lengkap kasus penyadapan ilegal terhadap Presiden Prabowo,3 Konfirmasi resmi,Trust,0,0,0,1,0,0,0,0,0
+11,Disway,"Presiden Prabowo diduga disadap sejak 2025, file dihapus Oktober 2026",3 Konfirmasi resmi,Trust,0,0,0,1,0,0,0,0,0
+12,Tutur.co.id,Bareskrim Polri beberkan kronologi skandal penyadapan Presiden Prabowo,3 Konfirmasi resmi,Trust,0,0,0,2,1,0,0,0,0
+13,Kompas.id,"Presiden Prabowo tahu dirinya disadap, Yusril: masalah serius negara",4 Respons pemerintah/elite,Trust,0,0,0,2,0,0,0,0,0
+14,SuperNews,Skandal penyadapan ilegal Presiden: Bareskrim bongkar data LIMS,3 Konfirmasi resmi,Trust,0,0,0,1,1,0,0,0,0
+15,Lensa Indonesia,"Presiden Prabowo diduga disadap sejak 2025, Bareskrim dalami sistem LIMS",3 Konfirmasi resmi,Trust,0,0,0,2,0,0,0,0,0
+16,Demokratis,Bareskrim ungkap dugaan penyalahgunaan sistem LIMS,3 Konfirmasi resmi,Trust,0,0,0,1,0,0,0,0,0
+17,Liputan6,"Apa itu LIMS, sistem yang diduga dipakai dalam penyadapan Prabowo",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+18,Detik Jabar,Kronologi lengkap kasus penyadapan ilegal Presiden,6 Analisis/liputan lanjutan,Skepticism,0,0,0,0,0,0,0,0,0
+19,Kilasberita,Penyadapan Presiden Prabowo: Kabareskrim ungkap LIMS disalahgunakan,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+20,JawaPos,"Presiden Prabowo disadap, pakar ingatkan risiko keamanan negara",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+21,Viva,DPR didesak bentuk Pansus Penyadapan,4 Respons pemerintah/elite,Anticipation,0,0,0,0,0,0,2,0,0
+22,Wikipedia (id),Kasus dugaan penyadapan ilegal terhadap Presiden Prabowo Subianto,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+23,CNN Indonesia,Polri bakal blak-blakan soal kabar penyadapan sore ini,2 Respons Polri pra-konferensi,Trust,0,0,0,0,0,0,0,0,0
+24,Bisnis.com,Polri bakal gelar konferensi pers di tengah isu penangkapan jenderal,2 Respons Polri pra-konferensi,Trust,0,0,0,0,0,0,0,0,0
+25,Suara.com,"Geger kabar jenderal ditangkap dan diperiksa Propam, Mabes Polri gelar konferensi pers",2 Respons Polri pra-konferensi,Surprise,0,0,0,0,0,0,0,1,0
+26,Okezone,"Heboh kabar penangkapan sejumlah jenderal, Polri akan gelar konferensi pers",2 Respons Polri pra-konferensi,Surprise,0,0,0,0,0,0,0,1,0
+27,Viva,Polri janji ungkap kabar penangkapan perwira tinggi sore ini,2 Respons Polri pra-konferensi,Trust,0,0,0,0,0,0,0,0,0
+28,Tirto,"Isu jenderal polisi ditangkap, Polri-Kemenkumham segera jelaskan",2 Respons Polri pra-konferensi,Trust,0,0,0,0,0,0,0,0,0
+29,IDN Times,"Heboh isu sejumlah jenderal ditangkap, Polri segera konferensi pers",2 Respons Polri pra-konferensi,Surprise,0,0,0,0,0,0,0,1,0
+30,Lombok Post,"Isu jenderal Polri ditangkap, Mabes janji buka suara",2 Respons Polri pra-konferensi,Trust,0,0,0,0,0,0,0,0,0
+31,Garuda TV,"Mabes Polri gelar konferensi pers, isu penangkapan jenderal memanas",2 Respons Polri pra-konferensi,Trust,0,0,0,0,0,0,0,0,0
+32,Ulasan.co,Heboh! Jenderal bintang empat dikabarkan sempat ditangkap di Mako Brimob,1 Rumor,Surprise,0,0,0,0,0,0,0,1,0
+33,Aktual,Beredar kabar jenderal bintang empat sempat ditangkap di Brimob Kelapa Dua,1 Rumor,Skepticism,0,0,0,0,0,0,0,0,0
+34,BatamNow,"Geger isu empat jenderal polisi diamankan, satu diduga berinisial L",1 Rumor,Surprise,0,0,0,0,0,0,0,1,0
+35,AmiraRiau,Gempar! Beredar kabar sejumlah jenderal bintang 4 dan 2 diamankan,1 Rumor,Surprise,0,0,0,0,0,0,0,1,0
+36,Kakinews,Mabes Polri buka suara soal jenderal bintang 4 diperiksa lalu dilepas,1 Rumor,Trust,0,0,0,0,0,0,0,0,0
+37,Zabak,"Dugaan penyadapan Presiden, sejumlah petinggi Polri dikabarkan diamankan",1 Rumor,Trust,0,0,0,0,0,0,0,0,0
+38,MudaNews,"Isu penangkapan jenderal di Mako Brimob, Bambang Rukminto desak Kapolri buka identitas",1 Rumor,Trust,0,0,0,0,0,0,0,0,0
+39,Liputan9,"Kabar jenderal bintang empat diamankan di Mako Brimob, Polri belum beri keterangan",1 Rumor,Trust,0,0,0,0,0,0,0,0,0
+40,RMNews,Heboh isu sejumlah jenderal polisi ditangkap dan ditahan di Mako Brimob,1 Rumor,Surprise,0,0,0,0,0,0,0,1,0
+41,Media Indonesia,Istana dukung Polri ungkap dalang penyadapan Presiden,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+42,Borneo Globe,"Reaksi Istana soal penyadapan Presiden, Mensesneg: proses objektif",4 Respons pemerintah/elite,Skepticism,0,0,0,0,0,0,0,0,0
+43,Kompas.com,Istana waspada usai kasus penyadapan Prabowo terungkap,4 Respons pemerintah/elite,Fear,0,1,0,1,0,0,0,0,0
+44,detikNews,Mensesneg pastikan Istana bersih-bersih usai penyadapan ilegal Prabowo,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+45,IDN Times,Langkah Istana tanggapi kasus penyadapan Presiden: bersih-bersih terus,4 Respons pemerintah/elite,Skepticism,0,0,0,0,0,0,0,0,0
+46,Editor Indonesia,Mensesneg: Istana terus berbenah usai kasus penyadapan ilegal Prabowo,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+47,Liputan6,Mensesneg buka suara soal dugaan musuh dalam selimut di Istana,4 Respons pemerintah/elite,Skepticism,0,0,0,0,0,0,0,0,0
+48,JPNN,"Heboh skandal penyadapan, Istana tingkatkan kewaspadaan",4 Respons pemerintah/elite,Disgust,0,0,0,0,1,0,0,1,0
+49,CNN Indonesia (video),Mensesneg sebut Istana lebih waspada usai kasus penyadapan; BIN sebut mengarah ke dugaan makar,4 Respons pemerintah/elite,Anger,1,1,0,0,0,0,0,0,0
+50,Pikiran Rakyat,Kabareskrim buka suara soal isu Tito Karnavian dan Idham Azis terseret kasus penyadapan,5 Bantahan/klarifikasi,Skepticism,0,0,0,0,0,0,0,0,0
+51,iNews,Bareskrim bantah isu Tito dan Idham Azis ditangkap terkait penyadapan Prabowo,5 Bantahan/klarifikasi,Trust,0,0,0,2,0,0,0,0,0
+52,Harian Aceh,Bareskrim bantah isu Tito dan Idham Azis ditangkap terkait penyadapan Prabowo,5 Bantahan/klarifikasi,Trust,0,0,0,2,0,0,0,0,0
+53,TribunWow (1),Bantahan Polri: nama Tito dan Idham Azis terseret isu penyadapan,5 Bantahan/klarifikasi,Trust,0,0,0,0,0,0,0,0,0
+54,TribunWow (2),Bareskrim tegas bantah rumor Mendagri dan eks Kapolri ditangkap,5 Bantahan/klarifikasi,Trust,0,0,0,1,0,1,0,0,0
+55,Liputan6,Bareskrim jawab isu dua eks Kapolri terseret kasus penyadapan Presiden,5 Bantahan/klarifikasi,Trust,0,0,0,1,0,0,0,0,0
+56,TribunWow (3),Kabareskrim pastikan isu penangkapan Mendagri terkait penyadapan adalah hoaks,5 Bantahan/klarifikasi,Skepticism,0,0,0,0,0,0,0,0,0
+57,Gelora,Bareskrim bantah isu Tito dan Idham Azis ditangkap,5 Bantahan/klarifikasi,Trust,0,0,0,1,0,0,0,0,0
+58,BitvOnline,Bareskrim bantah kabar penangkapan Tito Karnavian dan Idham Azis di kasus LIMS,5 Bantahan/klarifikasi,Trust,0,0,0,1,0,0,0,0,0
+59,Kompas (English),Indonesian National Police names General Listyo Sigit as suspect in illegal wiretapping of Prabowo,7 Internasional,Trust,0,0,0,1,0,0,0,0,0
+60,Jakarta Globe,Former Indonesian police chief Listyo Sigit named suspect in alleged presidential wiretapping case,7 Internasional,Skepticism,0,0,0,0,0,0,0,0,0
+61,Indonesia Business Post,Former police chief Listyo named suspect in alleged wiretapping of Prabowo,7 Internasional,Trust,0,0,0,1,0,0,0,0,0
+62,TRT World,Indonesia says ex-police chief may have committed 'treason' by tapping president's phone,7 Internasional,Skepticism,0,0,0,0,0,0,0,0,0
+63,Tempo (English),Police probe who ordered alleged wiretapping of Prabowo involving four generals,7 Internasional,Trust,0,0,0,1,0,0,0,0,0
+64,Kompas.id (English),"Listyo Sigit Prabowo, from the circle of power to wiretapping",7 Internasional,Trust,0,0,0,1,0,0,0,0,0
+65,CNN Indonesia,"Polri tetapkan 3 tersangka penyadapan, termasuk LSP dan ASN",3 Konfirmasi resmi,Trust,0,0,0,0,0,0,0,0,0
+66,CNN Indonesia,Bareskrim tetapkan LSP sebagai tersangka penyadapan Prabowo,3 Konfirmasi resmi,Trust,0,0,0,2,0,0,0,0,0
+67,Liputan6,Presiden hingga LSM dan media jadi sasaran penyadapan,3 Konfirmasi resmi,Skepticism,0,0,0,0,0,0,0,0,0
+68,CNN Indonesia,Kronologi penyadapan yang dilakukan 3 tersangka terhadap Prabowo,3 Konfirmasi resmi,Trust,0,0,0,1,0,0,0,0,0
+69,Kompas.com,Jenderal Listyo Sigit diduga sadap Prabowo hingga pengusaha,3 Konfirmasi resmi,Trust,0,0,0,1,0,0,0,0,0
+70,NTVNews,Media asing ramai soroti kasus penyadapan Presiden Prabowo oleh eks Kapolri,7 Internasional,Trust,0,0,0,1,0,0,0,0,0
+71,Republika,"Kasus penyadapan Presiden RI juga diberitakan media luar negeri, trending di X",7 Internasional,Skepticism,0,0,0,0,0,0,0,0,0
+72,Okezone,Polri Tetapkan Jenderal Listyo Sigit Tersangka Penyadapan Presiden Prabowo,3 Konfirmasi resmi,Trust,0,0,0,1,0,0,0,0,0
+73,NU Online,Eks Kapolri Listyo Sigit Jadi Tersangka Penyadapan Ilegal Presiden Prabowo,3 Konfirmasi resmi,Trust,0,0,0,1,0,0,0,0,0
+74,Jawa Pos,Identitas 3 Jenderal Polri Tersangka Penyadapan Presiden Prabowo: Ada Eks Kapolri Listyo Sigit,3 Konfirmasi resmi,Trust,0,0,0,1,0,0,0,0,0
+75,Jawa Pos,"Jadi Tersangka Penyadapan Presiden Prabowo, Listyo Sigit dan 2 Jenderal Polri Dijerat 3 Pasal",3 Konfirmasi resmi,Trust,0,0,0,1,0,0,0,0,0
+76,ANTARA,Polri: Tiga tersangka penyadapan ilegal sadap Presiden hingga ormas,3 Konfirmasi resmi,Trust,0,0,0,0,0,0,0,0,0
+77,Viva,"Tiga Tersangka Kasus Penyadapan Presiden Prabowo: Listyo Sigit, Eko Hadi dan Ahrie Sonta",3 Konfirmasi resmi,Trust,0,0,0,1,0,0,0,0,0
+78,Okezone,Yusril: Presiden Prabowo Tahu Jadi Korban Penyadapan Jenderal Listyo Cs,4 Respons pemerintah/elite,Trust,0,0,0,2,0,0,0,0,0
+79,Liputan6,Presiden Prabowo Tahu Disadap Eks Kapolri Listyo Sigit dan 2 Jenderal,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+80,Okezone,"Kasus Dugaan Penyadapan Presiden Libatkan Eks Kapolri, Gerindra: Bentuk Insubordinasi",4 Respons pemerintah/elite,Trust,0,0,0,0,0,0,0,0,0
+81,RCTI+ (IDX Channel),"Soal Penyadapan Ilegal, Yusril: Presiden Sudah Tahu",4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+82,ANTARA,Gerindra hormati proses hukum kasus penyadapan ilegal terhadap Presiden,4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,1,0,0
+83,Katadata,"Sekjen Gerindra: Penyadapan Prabowo Bentuk Insubordinasi, Mengarah ke Makar",4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,0,0,0
+84,Bisnis.com,"Listyo Sadap Prabowo, Istana Sebut Ada Dugaan Makar",4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,0,0,0
+85,Journalarta,"Penyadapan Presiden, PDIP Desak Polri Usut Penyalahgunaan Wewenang",4 Respons pemerintah/elite,Trust,0,0,0,0,0,0,0,0,0
+86,IDN Times,Mahfud MD Yakin Hasil Penyadapan Listyo Sigit Mengalir ke Geng Solo,4 Respons pemerintah/elite,Skepticism,0,0,0,0,0,0,0,0,0
+87,Okezone,"Listyo Sigit Ditetapkan Tersangka Penyadapan Prabowo, Jokowi Akhirnya Buka Suara!",4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+88,RCTI+ (iNews),"Buntut Kasus Jenderal Listyo Sigit Cs, DPR Bakal Revisi UU Penyadapan",4 Respons pemerintah/elite,Anticipation,0,0,0,0,0,0,1,0,0
+89,ANTARA,Jubir Gerindra minta Polri ungkap motif kasus penyadapan ke Presiden,4 Respons pemerintah/elite,Trust,0,0,0,0,0,0,0,0,0
+90,Katadata,Hasto Sekjen PDIP: Kasus Penyadapan LSP Melanggar HAM & Perlawanan Sistem Hukum (video),4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,0,0,0
+91,Katadata,Reaksi Jokowi saat Ditanya Kasus Penyadapan Diduga Libatkan Listyo Sigit,4 Respons pemerintah/elite,Skepticism,0,0,0,0,0,0,0,0,0
+92,Bisnis.com,Senyum Jokowi saat Ditanya soal Kasus Listyo Sigit,4 Respons pemerintah/elite,Skepticism,0,0,0,0,0,0,0,0,0
+93,RMOL,DPR Taruh Harapan di Pundak Suyudi dan Jajaran Usut Tuntas Kasus Listyo Sigit Dkk,4 Respons pemerintah/elite,Anticipation,1,0,0,0,0,0,2,0,0
+94,IDN Times,Mahfud Ungkap Listyo Sempat Dibebaskan saat Subuh Sebelum Tersangka Penyadapan,4 Respons pemerintah/elite,Anticipation,0,0,0,0,0,0,0,0,0
+95,RCTI+ (Sindonews),"Penyadapan Presiden Prabowo, Mahfud: Jokowi dan Gibran Kok Enggak Disadap?",4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+96,Okezone,"Komisi III Panggil Kapolri, Bahas Penyadapan Prabowo hingga Usut Pemberi Perintah ke Listyo Cs",4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+97,ANTARA,Komisi III DPR dan Kapolri rapat bahas kasus penyadapan pada Kamis,4 Respons pemerintah/elite,Anticipation,0,0,0,0,0,0,1,0,0
+98,ANTARA,Gerindra dorong Polri perluas penyidikan dugaan penyadapan Presiden,4 Respons pemerintah/elite,Trust,0,0,0,0,0,0,0,0,0
+99,Jawa Pos,"Ditanya Gibran Ikut Disadap Kayak Prabowo, Yusril: Wallahu A'lam",4 Respons pemerintah/elite,Trust,0,0,0,2,0,0,0,0,0
+100,Jawa Pos,Yusril: Prabowo Disadap Sejak 2 Bulan Menjabat sebagai Presiden RI,4 Respons pemerintah/elite,Trust,0,0,0,2,0,0,0,0,0
+101,Jawa Pos,Komisi III DPR Akan Panggil Kapolri untuk Bongkar Dalang dan Motif Penyadapan Prabowo,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,1,0,0
+102,Jawa Pos,"Komisi III DPR Bakal Panggil Kapolri, Dalami Penerima Manfaat Sadapan Prabowo",4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,1,0,0
+103,Jawa Pos,Komisi III DPR Dorong Polri Ungkap Motif Penyadapan Presiden oleh Eks Kapolri Listyo,4 Respons pemerintah/elite,Anticipation,0,0,0,0,0,0,1,0,0
+104,Jawa Pos,"Listyo Sigit Ditangkap Atas Kasus Penyadapan Presiden, Jokowi: Nanti Kita Tunggu",4 Respons pemerintah/elite,Anticipation,0,0,0,0,0,0,1,0,0
+105,Jawa Pos,PDIP soal Dugaan Penyadapan Prabowo oleh Listyo Sigit cs: Disuruh Jokowi?,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+106,Jawa Pos,Bahlil Mengaku Ikut Disadap Eks Kapolri Listyo Sigit Prabowo,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+107,JPNN,Yusril Sebut Presiden Prabowo Sudah Tahu Dirinya Disadap,4 Respons pemerintah/elite,Trust,0,0,0,2,0,0,0,0,0
+108,JPNN,"Kasus Presiden Disadap, Doli Golkar: Itu Untuk Kepentingan Siapa?",4 Respons pemerintah/elite,Skepticism,0,0,0,0,0,0,0,0,0
+109,JPNN,"Presiden Prabowo Disadap Sejak 2025, Bagaimana dengan Wapres Gibran?",4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+110,JPNN,"Kalimat Mahfud MD soal Listyo Sigit Tersangka Penyadapan Prabowo, Makjleb!",4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+111,JPNN,"Listyo Sigit Terseret Kasus Penyadapan Prabowo, Mahfud MD: Gila!",4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+112,JPNN,Sekjen Gerindra Minta Polisi Usut Dugaan Makar dalam Kasus Penyadapan,4 Respons pemerintah/elite,Anger,1,0,0,0,0,0,0,0,0
+113,JPNN,Komisi III Nilai Wajar Kasus Penyadapan Dianggap Memuat Unsur Makar,4 Respons pemerintah/elite,Anger,1,0,0,0,0,0,0,0,0
+114,JPNN,Hasto PDIP Nilai Penyadapan ke Presiden Masuk Tindakan Makar,4 Respons pemerintah/elite,Anger,1,0,0,0,0,0,0,0,0
+115,JPNN,"Soal Kasus Penyadapan, Hasto PDIP: Melanggar HAM dan Perlawanan Sistem Hukum",4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,0,0,0
+116,JPNN,Pemerintah Klaim Situasi Jakarta Kondusif meski Ada Pengerahan Pasukan TNI,4 Respons pemerintah/elite,Skepticism,0,0,0,0,0,0,0,0,1
+117,JPNN,"Heboh Penyadapan Presiden, Sahroni: Saya Mendukung Jenderal Suyudi Mengusut Kasus Ini",4 Respons pemerintah/elite,Surprise,0,0,0,0,0,0,0,1,0
+118,JPNN,"Soal Geng Solo di Kasus Penyadapan, Komisi III Minta Hukum Ditegakkan",4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,0,0,0
+119,JPNN,"Chandra Singgung Kedekatan Jokowi-Listyo, Mahfud Dapat Info Hasil Sadapan Sampai ke Solo",4 Respons pemerintah/elite,Skepticism,0,0,0,0,0,0,0,0,0
+120,JPNN,Politikus PAN Desak Polri Bongkar Aktor Intelektual Penyadapan Presiden Prabowo,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+121,JPNN Jateng,"Sambangi Polrestabes Semarang, Kader Gerindra Minta Motif Penyadapan Presiden Prabowo Diungkap",4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+122,ANTARA,Komisi III DPR hormati proses hukum kasus penyadapan Presiden,4 Respons pemerintah/elite,Anticipation,1,0,0,1,0,0,2,0,0
+123,ANTARA,Presiden Prabowo sangat prihatin atas kasus dugaan penyadapan,4 Respons pemerintah/elite,Sadness,0,0,1,1,0,0,0,0,0
+124,ANTARA,Menko Yusril: Kasus penyadapan terhadap Presiden terindikasi makar,4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,0,0,0
+125,ANTARA,Gerindra konsolidasi sikapi kasus penyadapan Presiden,4 Respons pemerintah/elite,Skepticism,0,0,0,0,0,0,0,0,0
+126,Katadata,Gerindra Siapkan Konsolidasi Internal Usai Kasus Penyadapan Prabowo,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+127,Liputan6,Reaksi Jokowi soal Jenderal Listyo Jadi Tersangka Penyadapan Prabowo,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+128,Liputan6 (Enam Plus),"Jadi Tersangka Penyadapan Presiden, Listyo Sigit Diberhentikan dari KSP",4 Respons pemerintah/elite,Anticipation,0,0,0,0,0,0,0,0,0
+129,Republika,Yusril Sebut Presiden Prabowo Sudah Tahu Dugaan Penyadapan Berkat Laporan Kapolri,4 Respons pemerintah/elite,Trust,0,0,0,2,0,0,0,0,0
+130,Viva,Gerindra Singgung Kemungkinan Makar di Kasus Penyadapan Prabowo oleh Listyo Sigit Cs,4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,0,0,0
+131,Viva,Gerindra Makin Curiga Penyadapan Prabowo dan Indikasi Makar Libatkan Pihak Lain,4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,0,0,0
+132,Harian Jogja,Yusril Ungkap Prabowo Sudah Tahu Jadi Target Penyadapan Ilegal Listyo Sigit Cs,4 Respons pemerintah/elite,Trust,0,0,0,2,0,0,0,0,0
+133,AFU.id,Respons Datar Jokowi soal Kasus Penyadapan terhadap Presiden Prabowo oleh Listyo Sigit,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+134,Berita Jatim,"Presiden Prabowo Disadap Listyo Sigit, Hasto Blak-blakan: PDIP Dulu Juga Pernah",4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+135,Okezone,"Pengerahan Prajurit Besar-besaran ke Jakarta, TNI: Tak Perlu Dikaitkan Isu Apapun",5 Bantahan/klarifikasi,Skepticism,0,0,0,0,0,0,0,0,0
+136,JPNN Jakarta,TNI Buka Suara Soal Kabar Kerahkan Banyak Prajurit ke Jakarta,5 Bantahan/klarifikasi,Skepticism,0,0,0,0,0,0,0,0,0
+137,Rakyat Merdeka (RM.id),Ada Penebalan Pasukan untuk Jakarta,5 Bantahan/klarifikasi,Skepticism,0,0,0,0,0,0,0,0,0
+138,IDN Times,TNI AL: Pengerahan Ribuan Prajurit ke Jakarta untuk Jaga Stabilitas Keamanan,5 Bantahan/klarifikasi,Skepticism,0,0,0,0,0,0,0,0,0
+139,IDN Times,Mabes TNI Benarkan Pengerahan Ribuan Tentara ke Jakarta untuk Kesiapsiagaan,5 Bantahan/klarifikasi,Skepticism,0,0,0,0,0,0,0,0,0
+140,ANTARA,Para pemimpin dunia ini ternyata juga pernah disadap,6 Analisis/liputan lanjutan,Skepticism,0,0,0,0,0,0,0,0,0
+141,Bisnis.com,"Penyadapan Prabowo Diduga Libatkan LIMS, Apa Itu?",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+142,Bisnis.com,"Prabowo Disadap, Pengamat Singgung Kelemahan 2G dan Penyalahgunaan Kekuasaan",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+143,Bisnis.com,"Kasus Penyadapan Presiden, Pengamat Siber Minta Sistem LIMS Diaudit Total",6 Analisis/liputan lanjutan,Skepticism,0,0,0,0,0,0,0,0,0
+144,Okezone,Breaking News! Polri Tetapkan Irjen Slamet Uliandi Jadi Tersangka Penyadapan Prabowo,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+145,Okezone,Terkuak! Peran Irjen Slamet Uliandi di Penyadapan Prabowo sebagai Dewan Pembina,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+146,Okezone,Tersangka Penyadapan Prabowo Irjen Slamet Uliandi Tidak Ditahan karena Stroke,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+147,Okezone,Bareskrim: Listyo Sigit Cs Ditahan di Mako Brimob!,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+148,CNN Indonesia,"Polri Bentuk Tim Khusus Kasus Penyadapan Prabowo, Dipimpin Kabareskrim",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+149,RMOL,"Irjen Slamet Uliandi Tersangka Baru Kasus Penyadapan Prabowo, Ini Perannya",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+150,RMOL,Slamet Uliandi Pernah Setujui Hapus File Penyadapan di Awal Oktober,6 Analisis/liputan lanjutan,Skepticism,0,0,0,0,0,0,0,0,0
+151,CNN Indonesia,Kuasa Hukum: Ahrie Sonta Akan Terbuka soal Kasus Penyadapan Prabowo,6 Analisis/liputan lanjutan,Trust,1,0,0,2,0,0,0,0,0
+152,Republika,"Empat Jenderal Tersangka, Kapolri Bentuk Tim Khusus Usut Penyadapan Presiden",6 Analisis/liputan lanjutan,Trust,0,0,0,0,0,0,0,0,0
+153,Justisio,Empat Jenderal Polri Jadi Tersangka Kasus Dugaan Penyadapan Presiden Prabowo,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+154,Justisio,Empat Jenderal Tersangka Penyadapan Prabowo Bakal Disidang Etik,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+155,Jawa Pos,"Profil Jenderal Listyo Sigit Prabowo, Eks Kapolri Tersangka Penyadapan Presiden Prabowo",6 Analisis/liputan lanjutan,Trust,0,0,0,2,0,0,0,0,0
+156,Jawa Pos,Peran Irjen Slamet Uliandi: Pemegang Kendali Penyadapan Presiden Prabowo,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+157,Jawa Pos,Kembali Bertambah! Bareskrim Tetapkan Slamet Uliandi Tersangka Penyadapan Ilegal Prabowo,6 Analisis/liputan lanjutan,Trust,0,0,0,2,0,0,0,0,0
+158,Jawa Pos,"Profil Irjen Slamet Uliandi, Tersangka Penyadapan Prabowo yang Diduga Pegang Kendali MC Polri",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+159,Jawa Pos,Kasus Penyadapan Presiden Prabowo: Listyo Sigit Cs Resmi Ditahan di Mako Brimob Depok,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+160,Jawa Pos,Kapolri Suyudi Dapat Dukungan Keluarga Besar Brimob untuk Ungkap Penyadapan,6 Analisis/liputan lanjutan,Trust,0,0,0,0,0,0,0,0,0
+161,JPNN,Irjen Slamet Uliandi Jadi Tersangka Baru Kasus Penyadapan Presiden Prabowo,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+162,JPNN,"TNI Kerahkan Prajurit dalam Jumlah Besar ke Jakarta, Ada yang Genting?",6 Analisis/liputan lanjutan,Fear,0,1,0,0,0,0,0,0,0
+163,JPNN,Karier Jenderal Listyo Sigit Eks Kapolri Pilihan Jokowi Berakhir Pahit,6 Analisis/liputan lanjutan,Trust,0,0,0,0,0,0,0,0,0
+164,JPNN,"Soal Kasus Penyadapan Presiden, Pengamat Tangkap Kepentingan Politik Jangka Pendek",6 Analisis/liputan lanjutan,Anger,1,0,0,0,0,0,0,0,0
+165,ANTARA,Pakar: Penyadapan harus penuhi tiga unsur,6 Analisis/liputan lanjutan,Skepticism,0,0,0,0,0,0,0,0,0
+166,ANTARA,"Mengenal LIMS, alat yang digunakan untuk menyadap Presiden Prabowo",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+167,ANTARA,Polri sebut tersangka SU berikan izin penyadapan ilegal Presiden,6 Analisis/liputan lanjutan,Trust,0,0,0,0,0,0,0,0,0
+168,Katadata,Polri Tetapkan Irjen Slamet Uliandi sebagai Tersangka Baru Kasus Dugaan Penyadapan (video),6 Analisis/liputan lanjutan,Trust,0,0,0,0,0,0,0,0,0
+169,Viva,Bareskrim Ungkap Peran Irjen Slamet Uliandi dalam Penyadapan Presiden: Sebagai Dewan Pembina,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+170,Viva Bandung,Profil Listyo Sigit: Jendral Kepercayaan Jokowi jadi Tersangka Penyadapan Presiden Prabowo,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+171,Harian Jogja,"Profil Listyo Sigit Prabowo, dari Ajudan Jokowi hingga Terseret Kasus Penyadapan",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+172,Harian Jogja,"Kasus Penyadapan Presiden, Pengamat Desak Aktor di Balik Layar Diusut",6 Analisis/liputan lanjutan,Skepticism,0,0,0,0,0,0,0,0,0
+173,Harian Jogja,"Kasus Penyadapan Ponsel Presiden Prabowo, Pakar UII Soroti Fungsi LIMS",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+174,Harian Jogja,"Kasus Penyadapan Presiden Prabowo: Susul Listyo Sigit, Irjen Slamet Uliandi Tersangka",6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+175,Harian Jogja,"Listyo Sigit dan 2 Jenderal Ditahan di Mako Brimob, Slamet Uliandi Masih Bebas",6 Analisis/liputan lanjutan,Skepticism,0,0,0,0,0,0,0,0,0
+176,AFU.id,"Slamet Uliandi Jadi Pusat Kontrol Kasus Penyadapan Presiden, Beri Izin Sadap dan Hapus File",6 Analisis/liputan lanjutan,Skepticism,0,0,0,0,0,0,0,0,0
+177,Mojok.co,"Proses dan Motif Penyadapan Nomor Presiden oleh Listyo Sigit Dkk, Prabowo Prihatin dan Perintahkan Tak Pandang Bulu",6 Analisis/liputan lanjutan,Sadness,0,0,1,1,0,0,0,0,0
+178,Fortune Indonesia,Apa Itu LIMS yang Diduga untuk Menyadap Presiden Prabowo?,6 Analisis/liputan lanjutan,Trust,0,0,0,1,0,0,0,0,0
+179,InfoPublik,"Penyadapan Ilegal dan Ancaman Privasi, Ini Pentingnya Pengawasan Sistem LIMS",6 Analisis/liputan lanjutan,Fear,0,1,0,0,0,0,0,0,0
+180,IDN Times,"LBH: Penyadapan Ilegal Alarm Bahaya Politisasi Polri, Harus Reformasi Total",6 Analisis/liputan lanjutan,Fear,0,1,0,0,0,0,0,0,0
+181,The Jakarta Post,Three police generals named in plot to bug Prabowo,7 Internasional,Trust,0,0,0,1,0,0,0,0,0
+182,Tribune (Filipina),Ex-police chief may have committed 'treason' by wiretapping president,7 Internasional,Skepticism,0,0,0,0,0,0,0,0,0
+183,UCA News,Indonesia's ex-police chief faces 'treason' charge for wiretapping president,7 Internasional,Skepticism,0,0,0,0,0,0,0,0,0
+184,The Canberra Times,Indonesia arrests for alleged wiretapping of president,7 Internasional,Skepticism,0,0,0,0,0,0,0,0,0
+185,The Jakarta Post,Wiretapping scandal exposes gaps in surveillance safeguards,7 Internasional,Skepticism,0,0,0,0,0,0,0,0,0
+186,Asia News Network,Indonesia arrests ex-police chief Listyo for alleged wiretapping of President Prabowo,7 Internasional,Trust,0,0,0,1,0,0,0,0,0
+187,Open The Magazine,Indonesia's Wiretap Scandal: How Could Police Listen In on Their Own President?,7 Internasional,Skepticism,0,0,0,0,0,0,0,0,0
+188,The NewsMinute,Indonesia detains 3 police generals suspected of wiretapping President Prabowo,7 Internasional,Trust,0,0,0,1,0,0,0,0,0
+189,Arab News,Indonesia detains 3 police generals suspected of wiretapping president,7 Internasional,Skepticism,0,0,0,0,0,0,0,0,0
+190,SCMP,Indonesian police arrest 3 for tapping Prabowo's phone,7 Internasional,Trust,0,0,0,1,0,0,0,0,0
+191,SCMP,Indonesia's Prabowo sacks chief of staff as wiretap scandal tests alliance with Widodo,7 Internasional,Trust,0,0,0,1,0,0,0,0,0
+192,Rakyat Bekasi,"Makin Liar! Isu Perwira Polri Ditangkap Atas Dugaan Makar Guncang Mabes, Kornas Desak Kapolri Buka-bukaan",1 Rumor,Anger,1,0,0,0,0,0,0,0,0
+193,Okezone,Breaking News! Kapolri Mutasi 264 Pati dan Pamen Polri,2 Respons Polri pra-konferensi,Trust,0,0,0,0,0,0,0,0,0
+194,Liputan6,"Mutasi Besar-besaran Polri, 264 Pati dan Pamen Diganti",2 Respons Polri pra-konferensi,Trust,0,0,0,0,0,0,0,0,0
+195,ANTARA,Menko Yusril: Kasus penyadapan ilegal tidak terindikasi makar,4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,0,0,0
+196,Jawa Pos,Yusril Tegaskan Kasus Penyadapan Presiden Prabowo Belum Mengarah ke Makar,4 Respons pemerintah/elite,Trust,1,0,0,2,0,0,0,0,0
+197,Jawa Pos,"Yusril Ungkap Penyadapan Prabowo Mengarah ke Makar, Diduga untuk Lumpuhkan Kekuasaan Presiden",4 Respons pemerintah/elite,Trust,1,0,0,2,0,0,0,0,0
+198,Jawa Pos,Mahfud MD Sebut Penyadapan Terhadap Prabowo sebagai Kejahatan Paling Besar Sepanjang Sejarah Polri,4 Respons pemerintah/elite,Trust,0,0,0,1,0,0,0,0,0
+199,Jawa Pos,"Kasus Penyadapan Presiden Prabowo, Polri Diminta Usut Dugaan Makar hingga Aktor Intelektual",4 Respons pemerintah/elite,Anger,1,0,0,1,0,0,0,0,0
+200,JPNN,98 Resolution Network Sebut Penyadapan Presiden Menjurus pada Tindakan Makar,4 Respons pemerintah/elite,Anger,1,0,0,0,0,0,0,0,0
