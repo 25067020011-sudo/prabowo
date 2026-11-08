@@ -77,3 +77,4 @@ On November 2–3, 2026, allegations emerged regarding the illegal wiretapping a
 - **No Private Data Storage:** All user IDs from digital platforms are one-way cryptographic hashed (SHA-256).
 - **Attribution Preservation:** No full copyrighted text is redistributed; metadata, quotes, and character-limited snippets ($\le 300$ chars) only.
 - **Strict Analytical Neutrality:** No legal guilt or innocence is adjudicated; analysis strictly maps the dynamics of communicative interaction and public attribution.
+

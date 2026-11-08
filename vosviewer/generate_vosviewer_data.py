@@ -198,3 +198,4 @@ def draw_vosviewer_map(edges):
 
 if __name__ == "__main__":
     generate_vosviewer_files()
+

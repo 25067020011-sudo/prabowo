@@ -41,3 +41,4 @@ Sincerely,
 Computational Political Communication & Network Science Research Group  
 Program Studi Ilmu Komunikasi  
 Email for Correspondence: *indri.kartikasari007@gmail.com*
+
